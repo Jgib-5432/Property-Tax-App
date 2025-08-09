@@ -1,0 +1,46 @@
+body {
+  font-family: "Arial", Sans-Serif;
+  font-size: 16pt;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+header {
+  flex: 0.05;
+}
+
+nav {
+  flex: 0.05;
+}
+
+section {
+  flex: 0.75;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+p {
+  flex: 0.5;
+  text-align: center;
+}
+
+img {
+  flex: 0.5;
+  height: 50%;
+  object-fit: contain;
+}
+
+footer {
+  flex: 0.1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 15vh;
+  background: linear-gradient(45deg, #ffffff, #008000);
+}
