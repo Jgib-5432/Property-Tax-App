@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function NavBar() {
   return (
-    <div className="flex ml-8 text-xl flex-row justify-around w-1/4">
+    <div className="flex ml-8 text-xl flex-row justify-around w-1/4 min-w-120">
       <Link href="/" className="place-self-center">
         Home
       </Link>
