@@ -1,0 +1,1 @@
+Commercial property are those lands and improvements which are used for industrial or commercial purposes. Things like factories, office buildings, or department stores are all classified as commercial property for the purposes of taxation and are taxed at 100% of market value.

@@ -1,4 +1,4 @@
-## Truth in Taxation: Explained
+# Truth in Taxation: Explained
 
 Among governmental funding mechansims, property taxes feature prominently. Like other kinds of taxes, levies on property are generally strucutred as a rate that is charged against the underlying value being taxed. In the case of property taxes, that rate is assessed against the value of the property in question. For example, a local government might set a rate of .001% which would create a tax lability of $400 against a home worth $400,000. Importantly, the general strucutre of such taxes is to set the tax rate directly just like is done with a sales tax or an income tax.
 

@@ -1,0 +1,1 @@
+Agricultural or FAA (Farmland Assessment Act) property, in contrast to other types of real property, is assessed based on its value for agricultural production rather than its market value (59-2-503). This may include land used to grow useful plants or raise livestock as defined in code.

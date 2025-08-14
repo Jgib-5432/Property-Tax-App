@@ -1,0 +1,1 @@
+Non-primary residential property includes all property classified as residential but not used as a primary residence. This may include second homes, vacation properties, rental buildings etc. Current statute excludes non-primary residential property from receiving the 45% exemption (59-2-103(6)) and so is taxed at 100% of market value.

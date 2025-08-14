@@ -1,0 +1,1 @@
+All vehicles not subject to the age-based fee, are instead subject to the fee-in-lieu. This fee is assessed as a percentage (1.5 or 1.0 depending on vehicle type) of the market value of the vehicle. This classification covers medium and heavy trucks, commercial trailers, vessels (31 ft or longer), and motor homes.
