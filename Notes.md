@@ -24,7 +24,6 @@
 - General Items
 
   - Learn to use Recharts https://recharts.org/en-US
-  - Learn Hooks and State variables to facilitate reactivity
   - Learn to use React Leaflet https://react-leaflet.js.org/
   - Rework python data processing to produce JSON files https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_json.html
   - Set up Vercel environment? https://vercel.com/pricing
@@ -34,8 +33,10 @@
   - Chart Template
 
 - Pages to Create:
+  - define prop mapping in page template component
   - Home
     - Explanation of the various property types
+      - create functional links to outside resources
     - Currently active forms of tax relief
       - Primary Residential Exemption
       - Circuit Breaker
