@@ -6,6 +6,8 @@
 
   - Rework data to output JSON https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_json.html
   - Vercel Protptype deployment https://vercel.com/pricing
+  - https://react-select.com/home
+  - https://www.upyesp.org/posts/makrdown-vscode-math-notation/
 
 - Map Page
 
@@ -23,7 +25,7 @@
 
 - Analysis Page
   - To Truth or Not to Truth: the effect of Truth in Taxation on Property tax collections
-  - Resdiential Tilt
+  - Resdiential Tilt: Why taxes are going up on homeowners
   - Inflation Adjustment
 
 ## Additional Development Checklist
