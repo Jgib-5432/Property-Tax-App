@@ -1,3 +1,3 @@
 export function ProfileContent() {
-  return <div> Entity Profiles </div>;
+  return <div className="text-black"> Entity Profiles </div>;
 }

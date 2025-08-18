@@ -10,7 +10,7 @@ export function Sidebar() {
   }
 
   return (
-    <div className="flex flex-col items-center bg-[#bcb4a5] text-[#196b24] grow my-2 text-xl rounded-r-xl ">
+    <div className="flex flex-col items-center max-w-56 bg-[#bcb4a5] text-[#196b24] grow my-2 text-xl text-center rounded-r-xl ">
       <div className=" flex flex-col items-center sticky top-0 ">
         <button className="text-4xl px-4 mt-4" onClick={toggleCollapse}>
           {"\u2261"}

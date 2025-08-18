@@ -60,18 +60,30 @@ export function PerPropCard() {
         Personal Property
       </button>
       {isOpen && (
-        <div className="grid bg-white row-start-4 col-start-3 col-span-4 rounded-xl shadow-xl/20 p-2 gap-4 place-content-center text-xl indent-16 px-8 ">
+        <div className="grid bg-white row-start-4 col-start-3 col-span-4 rounded-xl shadow-xl/20 p-2 gap-4 place-content-center text-xl/8 indent-16 p-8 text-justify">
           <ReactMarkdown>{markdownContent}</ReactMarkdown>
-          <button className="text-2xl" onClick={toggleAgeCollapse}>
-            Age-based Property{" "}
+          <button
+            className="flex text-2xl place-self-center"
+            onClick={toggleAgeCollapse}
+          >
+            <p className="flex mr-2">Age-based Property </p>
+            {"\u2335"}{" "}
           </button>
           {isAgeOpen && <ReactMarkdown>{AgeContent}</ReactMarkdown>}
-          <button className="text-2xl" onClick={toggleFeeCollapse}>
-            Fee-in-lieu
+          <button
+            className="flex text-2xl place-self-center"
+            onClick={toggleFeeCollapse}
+          >
+            <p className="flex mr-2">Fee-in-Lieu </p>
+            {"\u2335"}{" "}
           </button>
           {isFeeOpen && <ReactMarkdown>{FeeContent}</ReactMarkdown>}
-          <button className="text-2xl" onClick={toggleMobCollapse}>
-            Mobile Home
+          <button
+            className="flex text-2xl place-self-center"
+            onClick={toggleMobCollapse}
+          >
+            <p className="flex mr-2">Mobile Home </p>
+            {"\u2335"}{" "}
           </button>
           {isMobOpen && <ReactMarkdown>{MobContent}</ReactMarkdown>}
         </div>

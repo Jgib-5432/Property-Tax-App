@@ -18,7 +18,7 @@ export function TitleCard() {
     setIsOpen(!isOpen);
   }
   return (
-    <div className="grid bg-white px-8 col-start-2 col-span-5 rounded-xl shadow-xl/20 text-xl indent-16 p-4">
+    <div className="grid bg-white px-8 col-start-2 col-span-5 rounded-xl shadow-xl/20 text-xl/8 indent-16 gap-4 p-8 text-justify">
       <button className="text-4xl my-2" onClick={toggleCollapse}>
         Taxable Property: Explained{" "}
       </button>

@@ -26,7 +26,7 @@ export function CenAsPropCard() {
         Centrally Assessed
       </button>
       {isOpen && (
-        <div className="grid text-xl bg-white row-start-3 col-start-3 col-span-4 rounded-xl shadow-xl/20 p-4 gap-2 place-content-center px-8">
+        <div className="grid text-xl bg-white row-start-3 col-start-3 col-span-4 rounded-xl shadow-xl/20 p-4 gap-2 place-content-center text-xl/8 indent-16 p-8 text-justify">
           <ReactMarkdown>{markdownContent}</ReactMarkdown>
         </div>
       )}

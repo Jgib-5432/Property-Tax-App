@@ -81,37 +81,58 @@ export function RealPropCard() {
   return (
     <>
       <button
-        className="grid bg-white row-start-2 col-start-2 rounded-xl shadow-xl/20 p-2 gap-2 place-content-center text-2xl"
+        className="grid bg-white row-start-2 col-start-2 rounded-xl shadow-xl/20 place-content-center p-8 gap-2 text-2xl"
         onClick={toggleCollapse}
       >
         Real Property
       </button>
+
       {isOpen && (
-        <div className="grid bg-white row-start-2 col-start-3 col-span-4 rounded-xl shadow-xl/20 p-2 gap-4 place-content-center text-xl indent-16 px-8">
+        <div className="grid bg-white row-start-2 col-start-3 col-span-4 rounded-xl shadow-xl/20 p-2 gap-4 place-content-center text-xl/8 indent-16 p-8 text-justify">
           <ReactMarkdown>{markdownContent}</ReactMarkdown>
 
-          <button className="text-2xl" onClick={togglePrimeCollapse}>
-            Primary Residential
+          <button
+            className="flex text-2xl place-self-center "
+            onClick={togglePrimeCollapse}
+          >
+            <p className="flex mr-2">Primary Residential </p>
+            {"\u2335"}
           </button>
           {isPrimeOpen && <ReactMarkdown>{primeContent}</ReactMarkdown>}
 
-          <button className="text-2xl" onClick={toggleNonPrimeCollapse}>
-            Non-Primary Residential
+          <button
+            className="flex text-2xl place-self-center"
+            onClick={toggleNonPrimeCollapse}
+          >
+            <p className="flex mr-2">Non-Primary Residential </p>
+            {"\u2335"}{" "}
           </button>
           {isNonPrimeOpen && <ReactMarkdown>{nonPrimeContent}</ReactMarkdown>}
 
-          <button className="text-2xl" onClick={toggleComCollapse}>
-            Commercial{" "}
+          <button
+            className="flex text-2xl place-self-center"
+            onClick={toggleComCollapse}
+          >
+            <p className="flex mr-2">Commercial </p>
+            {"\u2335"}{" "}
           </button>
           {isComOpen && <ReactMarkdown>{comContent}</ReactMarkdown>}
 
-          <button className="text-2xl" onClick={toggleAggCollapse}>
-            Agricultural{" "}
+          <button
+            className="flex text-2xl place-self-center"
+            onClick={toggleAggCollapse}
+          >
+            <p className="flex mr-2">Agricultural </p>
+            {"\u2335"}
           </button>
           {isAggOpen && <ReactMarkdown>{aggContent}</ReactMarkdown>}
 
-          <button className="text-2xl" onClick={toggleUniCollapse}>
-            Unimporved
+          <button
+            className="flex text-2xl place-self-center"
+            onClick={toggleUniCollapse}
+          >
+            <p className="flex mr-2">Unimproved</p>
+            {"\u2335"}{" "}
           </button>
           {isUniOpen && <ReactMarkdown>{uniContent}</ReactMarkdown>}
         </div>

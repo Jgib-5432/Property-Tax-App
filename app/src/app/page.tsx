@@ -4,7 +4,7 @@ import { PageTemplate } from "@/components/PageTemplate";
 export default function Home() {
   return (
     <div>
-      <PageTemplate />
+      <PageTemplate page="Home" />
     </div>
   );
 }
