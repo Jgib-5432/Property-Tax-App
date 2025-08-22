@@ -1,12 +1,4 @@
 import React, { useState } from "react";
-import {
-  ComposableMap,
-  Geographies,
-  Geography,
-  Marker,
-  Annotation,
-  ZoomableGroup,
-} from "react-simple-maps";
 
 export function MapCard() {
   return (
