@@ -1,12 +1,24 @@
 # App Notes
 
+## Resources
+
+Pre-built react selectors
+
+- https://react-select.com/home
+
+Markdown Map notation
+
+- https://www.upyesp.org/posts/makrdown-vscode-math-notation/
+
+Tilemap options
+
+- https://leaflet-extras.github.io/leaflet-providers/preview/
+
 ## Minimum Viable Product Checklist
 
 - General:
 
   - Vercel Protptype deployment https://vercel.com/pricing
-  - https://react-select.com/home
-  - https://www.upyesp.org/posts/makrdown-vscode-math-notation/
 
 - Map Page
 
@@ -30,6 +42,10 @@
 ## Additional Development Checklist
 
 - Integrate personal property into analysis calculations
+- Add to Map ability to switch between tax entities and tax areas
+- Link between Map and profiles
+  - click on taxing entity brings up profile
+  - button on profile to bring up map
 - Statewide property type distribution page
 - Add entity Summary information to map page
 - Link sidebar titles in home page to content
@@ -37,3 +53,4 @@
   - residential exemption
   - circuit breaker
   - summary quantity information
+- Reformat Home Page accordian
