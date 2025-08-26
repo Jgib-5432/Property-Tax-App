@@ -1,4 +1,3 @@
-import entityData from "../../../public/data/base_data.json";
 import {
   LineChart,
   Line,
@@ -10,11 +9,11 @@ import {
   Legend,
 } from "recharts";
 
-export function TaxRateGraph({ currentData }) {
+export function TaxRateGraph({ currentEntity, currentData }) {
   return (
     <div className="flex flex-col h-full w-full p-2 gap-2 bg-white place-self-end justify-center items-center rounded-xl shadow-xl">
-      <div>Tax Rate</div>
-      <ResponsiveContainer width="95%" height={600}>
+      <div>Tax Rate: {currentEntity} </div>
+      <ResponsiveContainer width="95%" height="95%">
         <LineChart data={currentData}>
           <CartesianGrid stroke="#eeeeee" />
           <Line
@@ -31,7 +30,7 @@ export function TaxRateGraph({ currentData }) {
           <YAxis
             dataKey="Tax Rate"
             interval="preserveStart"
-            domain={[0, (dataMax) => dataMax * 1.2]}
+            domain={[0, (dataMax) => dataMax * 1.3]}
             tick={{ fontSize: 18 }}
             tickFormatter={(number) => `${number.toFixed(2)}%`}
           />

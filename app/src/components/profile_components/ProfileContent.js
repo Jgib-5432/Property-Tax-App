@@ -27,10 +27,9 @@ export function ProfileContent() {
     <div className="flex flex-row grow text-black my-2 mr-2">
       <ControlPanel onChangeEntity={changeEntity}/>
      <div className="flex flex-col grow text-2xl gap-4 p-4 bg-[#eeeeee] text-black rounded-xl shadow-xl/20 items-center ">
-        Entity Profiles
         <div className="flex flex-row h-full w-full gap-2">
-          <TaxRateGraph currentData={currentData}/>
-          <div className="flex flex-col h-full w-2/10 bg-white place-self-end justify-center items-center rounded-xl shadow-xl text-sm indent-4 gap-2 p-4 text-justify">
+          <TaxRateGraph currentEntity={currentEntity} currentData={currentData}/>
+          <div className="flex flex-col h-full w-2/10 bg-white place-self-end justify-center items-center rounded-xl shadow-xl text-base indent-4 gap-2 p-4 text-justify">
           <ReactMarkdown>{markdownContent}</ReactMarkdown>
           </div>
         </div>

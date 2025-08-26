@@ -2,17 +2,19 @@
 
 ## Resources
 
-Pre-built react selectors
+Markdown Math notation https://www.upyesp.org/posts/makrdown-vscode-math-notation/
 
-- https://react-select.com/home
+Tilemap options https://leaflet-extras.github.io/leaflet-providers/preview/
 
-Markdown Map notation
+Recharts https://recharts.org/en-US
 
-- https://www.upyesp.org/posts/makrdown-vscode-math-notation/
+React Selector https://react-select.com/home
 
-Tilemap options
+Example Entities:
 
-- https://leaflet-extras.github.io/leaflet-providers/preview/
+- Tooele City
+- Uintah County
+- Washington county flood control, Washington
 
 ## Minimum Viable Product Checklist
 
@@ -27,7 +29,6 @@ Tilemap options
 
 - Entity Profiles Page
 
-  - Learn to use Recharts https://recharts.org/en-US
   - Interactive Rate TimeSeries Chart
   - Interactive Revenue TimerSerires Chart
   - Type Split TimeSeries
@@ -42,15 +43,30 @@ Tilemap options
 ## Additional Development Checklist
 
 - Integrate personal property into analysis calculations
+
 - Add to Map ability to switch between tax entities and tax areas
+
+- Color map shapes by Tax Rate, Total Property, Entity Revenue
+
 - Link between Map and profiles
+
   - click on taxing entity brings up profile
   - button on profile to bring up map
+
 - Statewide property type distribution page
+
+  - County MultiSelecter
+  - Year Selector
+  - Taxing Entity Type Selector
+
 - Add entity Summary information to map page
+
 - Link sidebar titles in home page to content
+
 - add additional general information to home page:
+
   - residential exemption
   - circuit breaker
   - summary quantity information
+
 - Reformat Home Page accordian
