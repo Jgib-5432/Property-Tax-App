@@ -2,37 +2,36 @@
 
 import entityData from "../../../public/data/base_data.json" with {type: 'arry'};
 import { ControlPanel } from "@/components/profile_components/ControlPanel";
-import {
-  LineChart,
-  Line,
-  XAxis,
-  YAxis,
-  ResponsiveContainer,
-} from "recharts";
+import {TaxRateGraph} from "@/components/profile_components/TaxRateGraph"
+import ReactMarkdown from "react-markdown";
+import { useEffect, useState } from "react";
 
 export function ProfileContent() {
 
-  const filteredData = entityData.filter(item => item["Entity Name"] === "Tooele" )
+  const [markdownContent, setMarkdownContent] = useState("");
+
+  const [currentEntity, setCurrentEntity] = useState("Statewide")
+  const currentData = entityData.filter(item => item["Entity Name"] === currentEntity )
+
+  const changeEntity = (selectedOption) => {
+    setCurrentEntity(selectedOption.value)
+  }
+
+  useEffect(() => {
+    fetch("/text/entity profiles/Tax-Rate-Chart_des.md")
+      .then((response) => response.text())
+      .then((text) => setMarkdownContent(text));
+  }, []);
 
   return (
     <div className="flex flex-row grow text-black my-2 mr-2">
-      <ControlPanel />
-      <div className="flex flex-col grow text-2xl gap-4 p-4 bg-[#eeeeee] text-black rounded-xl shadow-xl/20 items-center ">
+      <ControlPanel onChangeEntity={changeEntity}/>
+     <div className="flex flex-col grow text-2xl gap-4 p-4 bg-[#eeeeee] text-black rounded-xl shadow-xl/20 items-center ">
         Entity Profiles
-        <div className="flex flex-row h-full w-full">
-          <div className="flex h-full w-2/10 bg-black place-self-end justify-center items-center gap-4 rounded-xl shadow-xl"></div>
-          <div className="flex h-full w-8/10 bg-white place-self-end justify-center items-center gap-4 rounded-xl shadow-xl">
-            <ResponsiveContainer>
-              <LineChart
-                width={100}
-                height={80}
-                data={filteredData}
-              >
-                <XAxis dataKey="Tax Year" />
-                <YAxis />
-                <Line type="monotone" dataKey="Tax Rate" stroke="#8884d8" />
-              </LineChart>
-            </ResponsiveContainer>
+        <div className="flex flex-row h-full w-full gap-2">
+          <TaxRateGraph currentData={currentData}/>
+          <div className="flex flex-col h-full w-2/10 bg-white place-self-end justify-center items-center rounded-xl shadow-xl text-sm indent-4 gap-2 p-4 text-justify">
+          <ReactMarkdown>{markdownContent}</ReactMarkdown>
           </div>
         </div>
       </div>

@@ -1,6 +1,12 @@
-import { useState } from "react";
+"use client";
 
-export function ControlPanel() {
+import { useState } from "react";
+import Select from "react-select";
+import entityList from "../../../public/data/entity_list.json";
+
+export function ControlPanel({ onChangeEntity }) {
+  const options = entityList;
+
   const [isTitleOpen, setIsOpen] = useState(true);
 
   function toggleCollapse() {
@@ -15,8 +21,8 @@ export function ControlPanel() {
       {isTitleOpen && (
         <div className="flex flex-col gap-4 w-[12vw] min-w-36 items-center mt-4">
           <div className="font-bold text-2xl">Control Panel </div>
-          <div className="font-bold"> Entity Type</div>
-          <div className="font-bold"> Tax Year </div>
+          <div className="font-bold"> Taxing Entity</div>
+          <Select options={options} onChange={onChangeEntity} />
         </div>
       )}
     </div>
