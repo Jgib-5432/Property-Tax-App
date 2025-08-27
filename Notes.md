@@ -32,8 +32,13 @@ Example Entities:
   - Interactive Rate TimeSeries Chart
   - Interactive Revenue TimerSerires Chart
   - Type Split TimeSeries
+
     - Value
     - Share
+
+  - make control panel content sticky
+  - format tooltip in
+  - write descriptions of each chart
 
 - Analysis Page
   - To Truth or Not to Truth: How Truth in Taxation contrains property taxes
@@ -70,3 +75,5 @@ Example Entities:
   - summary quantity information
 
 - Reformat Home Page accordian
+
+- proposed vs certified rates in profile charts

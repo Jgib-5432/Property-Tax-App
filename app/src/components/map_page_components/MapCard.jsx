@@ -1,4 +1,5 @@
 "use client";
+
 import "leaflet/dist/leaflet.css";
 //import React, { useState, useEffect } from "react";
 import { MapContainer, TileLayer, GeoJSON, Marker } from "react-leaflet";
@@ -23,7 +24,7 @@ export function MapCard() {
             style={{ color: "red", fillColor: "red", fillOpacity: 1 }}
           />
         </MapContainer>
-      </div>
+      </div>{" "}
     </div>
   );
 }
