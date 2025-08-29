@@ -4,13 +4,13 @@ import entityData from "../../../public/data/base_data.json" with {type: 'arry'}
 import { ControlPanel } from "@/components/profile_components/ControlPanel";
 import {TaxRateGraph} from "@/components/profile_components/TaxRateGraph"
 import {RevenueGraph} from "@/components/profile_components/RevenueGraph"
+import {ValueGraph} from "@/components/profile_components/ValueGraph"
+import {ShareGraph} from "@/components/profile_components/ShareGraph"
 import ReactMarkdown from "react-markdown";
 import { useEffect, useState } from "react";
 
 export function ProfileContent() {
-
-  const [markdownContent, setMarkdownContent] = useState("");
-
+  
   const [currentEntity, setCurrentEntity] = useState("Statewide")
   const currentData = entityData.filter(item => item["Entity Name"] === currentEntity )
 
@@ -18,30 +18,68 @@ export function ProfileContent() {
     setCurrentEntity(selectedOption.value)
   }
 
+  const [rateContent, setRateContent] = useState("");
+  const [revenueContent, setRevenueContent] = useState("");
+  const [valueContent, setValueContent] = useState("");
+  const [shareContent, setShareContent] = useState("");
+
+
   useEffect(() => {
     fetch("/text/entity profiles/Tax-Rate-Chart_des.md")
       .then((response) => response.text())
-      .then((text) => setMarkdownContent(text));
+      .then((text) => setRateContent(text));
+  }, []);
+
+    useEffect(() => {
+    fetch("/text/entity profiles/Revenue-Chart_des.md")
+      .then((response) => response.text())
+      .then((text) => setRevenueContent(text));
+  }, []);
+
+    useEffect(() => {
+    fetch("/text/entity profiles/Value-Chart_des.md")
+      .then((response) => response.text())
+      .then((text) => setValueContent(text));
+  }, []);
+
+    useEffect(() => {
+    fetch("/text/entity profiles/Share-Chart_des.md")
+      .then((response) => response.text())
+      .then((text) => setShareContent(text));
   }, []);
 
   return (
     <div className="flex flex-row grow text-black my-2 mr-2">
       <ControlPanel onChangeEntity={changeEntity}/>
      <div className="flex flex-col grow text-2xl gap-4 p-4 bg-[#eeeeee] text-black rounded-xl shadow-xl/20 items-center ">
-        <div className="flex flex-row  h-220 w-full gap-2">
+        <div className="flex flex-row  h-180 w-full gap-2">
           <TaxRateGraph currentEntity={currentEntity} currentData={currentData}/>
           <div className="flex flex-col h-full w-2/10 bg-white place-self-end justify-center items-center rounded-xl shadow-xl text-base p-4 indent-4 text-justify overflow-auto">
-          <ReactMarkdown>{markdownContent}</ReactMarkdown>
+          <ReactMarkdown>{rateContent}</ReactMarkdown>
           </div>
         </div>
 
-        <div className="flex flex-row  h-220 w-full gap-2">
+        <div className="flex flex-row  h-180 w-full gap-2">
           <RevenueGraph currentEntity={currentEntity} currentData={currentData}/>
           <div className="flex flex-col h-full w-2/10 bg-white place-self-end justify-center items-center rounded-xl shadow-xl text-base p-4 indent-4 text-justify overflow-auto">
-          <ReactMarkdown>{markdownContent}</ReactMarkdown>
+          <ReactMarkdown>{revenueContent}</ReactMarkdown>
           </div>
-
         </div>
+
+        <div className="flex flex-row  h-180 w-full gap-2">
+          <ValueGraph currentEntity={currentEntity} currentData={currentData}/>
+          <div className="flex flex-col h-full w-2/10 bg-white place-self-end justify-center items-center rounded-xl shadow-xl text-base p-4 indent-4 text-justify overflow-auto">
+          <ReactMarkdown>{valueContent}</ReactMarkdown>
+          </div>
+        </div>
+
+        <div className="flex flex-row  h-180 w-full gap-2">
+          <ShareGraph currentEntity={currentEntity} currentData={currentData}/>
+          <div className="flex flex-col h-full w-2/10 bg-white place-self-end justify-center items-center rounded-xl shadow-xl text-base p-4 indent-4 text-justify overflow-auto">
+          <ReactMarkdown>{shareContent}</ReactMarkdown>
+          </div>
+        </div>
+
       </div>
     </div>
   );

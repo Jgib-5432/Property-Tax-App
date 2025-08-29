@@ -1,20 +1,19 @@
 # App Notes
 
-## Resources
-
-Markdown Math notation https://www.upyesp.org/posts/makrdown-vscode-math-notation/
-
-Tilemap options https://leaflet-extras.github.io/leaflet-providers/preview/
-
-Recharts https://recharts.org/en-US
-
-React Selector https://react-select.com/home
-
 Example Entities:
 
 - Tooele City
 - Uintah County
+- emery county
 - Washington county flood control, Washington
+
+## Resources
+
+Markdown Math notation https://www.upyesp.org/posts/makrdown-vscode-math-notation/
+
+Recharts https://recharts.org/en-US
+
+React Selector https://react-select.com/home
 
 ## Minimum Viable Product Checklist
 
@@ -22,28 +21,25 @@ Example Entities:
 
   - Vercel Protptype deployment https://vercel.com/pricing
 
-- Map Page
-
-  - Interactive Map by entity type
-    - tooltip: Entity Name
-
 - Entity Profiles Page
 
-  - Interactive Rate TimeSeries Chart
-  - Interactive Revenue TimerSerires Chart
-  - Type Split TimeSeries
+  - reduce to [residential, commercial, other real, personal property, centrally assessed]
+  - format tooltip
+  - revise description of each chart
 
-    - Value
-    - Share
+- Statewide Comparison
 
-  - make control panel content sticky
-  - format tooltip in
-  - write descriptions of each chart
+  - County MultiSelecter
+  - Year Selector
+  - Taxing Entity Type Selector
 
 - Analysis Page
+
   - To Truth or Not to Truth: How Truth in Taxation contrains property taxes
   - Resdiential Tilt: Why taxes are going up on homeowners
   - Inflation Adjustment: needed revision or tax hikes in disguise?
+    - 5 year rolling average
+    - capped growth
 
 ## Additional Development Checklist
 
@@ -57,12 +53,6 @@ Example Entities:
 
   - click on taxing entity brings up profile
   - button on profile to bring up map
-
-- Statewide property type distribution page
-
-  - County MultiSelecter
-  - Year Selector
-  - Taxing Entity Type Selector
 
 - Add entity Summary information to map page
 

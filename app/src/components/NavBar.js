@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function NavBar() {
   return (
-    <div className="flex ml-8 text-xl flex-row justify-around w-1/4 min-w-120 ">
+    <div className="flex ml-8 text-xl flex-row justify-start gap-12 w-2/4 min-w-120 ">
       <Link href="/" className="place-self-center text-white no-underline">
         Home
       </Link>
@@ -17,6 +17,12 @@ export function NavBar() {
         className="place-self-center text-white no-underline"
       >
         Entity Profiles
+      </Link>
+      <Link
+        href="/pages/statewide_comp"
+        className="place-self-center text-white no-underline"
+      >
+        Statewide Comparison
       </Link>
       <Link
         href="/pages/analysis"
