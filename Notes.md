@@ -21,18 +21,6 @@ React Selector https://react-select.com/home
 
   - Vercel Protptype deployment https://vercel.com/pricing
 
-- Entity Profiles Page
-
-  - reduce to [residential, commercial, other real, personal property, centrally assessed]
-  - format tooltip
-  - revise description of each chart
-
-- Statewide Comparison
-
-  - County MultiSelecter
-  - Year Selector
-  - Taxing Entity Type Selector
-
 - Analysis Page
 
   - To Truth or Not to Truth: How Truth in Taxation contrains property taxes
@@ -66,4 +54,13 @@ React Selector https://react-select.com/home
 
 - Reformat Home Page accordian
 
-- proposed vs certified rates in profile charts
+- Profile page
+
+  - proposed vs certified rates in profile charts
+
+  - selector for picking property types, default: Prime residential, commercial, centerally assessed
+    - define on change function, pass to parent
+    - define logic for excluding liens by multiselect contnets
+
+- Statewide Comp Page
+  - 'Sort by' Selector

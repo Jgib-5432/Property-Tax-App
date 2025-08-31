@@ -3,9 +3,11 @@
 import { useState } from "react";
 import Select from "react-select";
 import entityList from "../../../public/data/entity_list.json";
+import propertyTypes from "../../../public/data/property_types_list.json";
 
-export function ControlPanel({ onChangeEntity }) {
-  const options = entityList;
+export function ControlPanel({ onChangeEntity, onChangeTypes }) {
+  const entityOptions = entityList;
+  const propertyOptions = propertyTypes;
 
   const [isTitleOpen, setIsOpen] = useState(true);
 
@@ -26,7 +28,13 @@ export function ControlPanel({ onChangeEntity }) {
           <div className="flex flex-col gap-4 w-[12vw] min-w-36 items-center mt-4">
             <div className="font-bold text-2xl">Control Panel </div>
             <div className="font-bold"> Taxing Entity</div>
-            <Select options={options} onChange={onChangeEntity} />
+            <Select options={entityOptions} onChange={onChangeEntity} />
+            <div className="font-bold"> Property Types</div>
+            <Select
+              options={propertyOptions}
+              isMulti
+              onChange={onChangeTypes}
+            />
           </div>
         )}
       </div>

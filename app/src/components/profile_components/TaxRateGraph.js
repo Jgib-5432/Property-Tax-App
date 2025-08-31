@@ -34,7 +34,7 @@ export function TaxRateGraph({ currentEntity, currentData }) {
             tick={{ fontSize: 18 }}
             tickFormatter={(number) => `${number.toFixed(2)}%`}
           />
-          <Tooltip />
+          <Tooltip formatter={(number) => `${number.toFixed(3)}%`} />
           <Legend align="center" verticalAlign="bottom" />
         </LineChart>
       </ResponsiveContainer>

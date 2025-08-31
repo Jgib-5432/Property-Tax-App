@@ -34,7 +34,7 @@ export function RevenueGraph({ currentEntity, currentData }) {
             tick={{ fontSize: 18 }}
             tickFormatter={(number) => `$${number.toFixed(0)}`}
           />
-          <Tooltip />
+          <Tooltip formatter={(number) => `$${number.toFixed(2)} M`} />
           <Legend align="center" verticalAlign="bottom" />
         </LineChart>
       </ResponsiveContainer>

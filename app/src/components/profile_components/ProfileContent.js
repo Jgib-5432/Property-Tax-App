@@ -18,6 +18,14 @@ export function ProfileContent() {
     setCurrentEntity(selectedOption.value)
   }
 
+  const [currentTypes, setCurrentTypes] = useState(['Primary Residential', 'Commercial', 'Centrally Assessed'])
+
+  const changeTypes = (selectedTypes) => {
+    setCurrentTypes(selectedTypes.map(type =>type.value))
+  }
+
+  console.log(currentTypes)
+
   const [rateContent, setRateContent] = useState("");
   const [revenueContent, setRevenueContent] = useState("");
   const [valueContent, setValueContent] = useState("");
@@ -50,7 +58,7 @@ export function ProfileContent() {
 
   return (
     <div className="flex flex-row grow text-black my-2 mr-2">
-      <ControlPanel onChangeEntity={changeEntity}/>
+      <ControlPanel onChangeEntity={changeEntity} onChangeTypes={changeTypes}/>
      <div className="flex flex-col grow text-2xl gap-4 p-4 bg-[#eeeeee] text-black rounded-xl shadow-xl/20 items-center ">
         <div className="flex flex-row  h-180 w-full gap-2">
           <TaxRateGraph currentEntity={currentEntity} currentData={currentData}/>
@@ -67,14 +75,14 @@ export function ProfileContent() {
         </div>
 
         <div className="flex flex-row  h-180 w-full gap-2">
-          <ValueGraph currentEntity={currentEntity} currentData={currentData}/>
+          <ValueGraph currentEntity={currentEntity} currentData={currentData} currentTypes= {currentTypes}/>
           <div className="flex flex-col h-full w-2/10 bg-white place-self-end justify-center items-center rounded-xl shadow-xl text-base p-4 indent-4 text-justify overflow-auto">
           <ReactMarkdown>{valueContent}</ReactMarkdown>
           </div>
         </div>
 
         <div className="flex flex-row  h-180 w-full gap-2">
-          <ShareGraph currentEntity={currentEntity} currentData={currentData}/>
+          <ShareGraph currentEntity={currentEntity} currentData={currentData} currentTypes= {currentTypes}/>
           <div className="flex flex-col h-full w-2/10 bg-white place-self-end justify-center items-center rounded-xl shadow-xl text-base p-4 indent-4 text-justify overflow-auto">
           <ReactMarkdown>{shareContent}</ReactMarkdown>
           </div>
