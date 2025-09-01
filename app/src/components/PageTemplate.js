@@ -4,6 +4,7 @@ import { MapContent } from "@/components/map_page_components/MapContent";
 import { ProfileContent } from "@/components/profile_components/ProfileContent";
 import { AnalysisContent } from "@/components/analysis_components/AnalysisContent";
 import { StatewideContent } from "@/components/statewide_comparison/StatewideContent";
+import { AnalysisTruthinTaxContent } from "@/components/analysis_components/To Truth or not to Truth.js/AnalysisTruthinTaxContent";
 
 export function PageTemplate({ page }) {
   const pageMap = new Map();
@@ -12,6 +13,7 @@ export function PageTemplate({ page }) {
   pageMap.set("Profile", <ProfileContent />);
   pageMap.set("Analysis", <AnalysisContent />);
   pageMap.set("Statewide Comparison", <StatewideContent />);
+  pageMap.set("truth_in_tax", <AnalysisTruthinTaxContent />);
 
   return (
     <div className="flex flex-col h-screen w-full justify-between">

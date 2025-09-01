@@ -24,6 +24,12 @@ React Selector https://react-select.com/home
 - Analysis Page
 
   - To Truth or Not to Truth: How Truth in Taxation contrains property taxes
+
+    - explain what truth in tax is and how it works
+    - show the relationship between rate, property, and revenue graphically
+    - aggregate to a statewide
+    - provide sandbox by entity
+
   - Resdiential Tilt: Why taxes are going up on homeowners
   - Inflation Adjustment: needed revision or tax hikes in disguise?
     - 5 year rolling average
@@ -57,10 +63,6 @@ React Selector https://react-select.com/home
 - Profile page
 
   - proposed vs certified rates in profile charts
-
-  - selector for picking property types, default: Prime residential, commercial, centerally assessed
-    - define on change function, pass to parent
-    - define logic for excluding liens by multiselect contnets
 
 - Statewide Comp Page
   - 'Sort by' Selector
