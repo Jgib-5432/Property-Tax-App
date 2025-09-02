@@ -106,9 +106,9 @@ export function AnalysisTruthinTaxContent() {
           the difference in aggregate tax liability experienced by taxpayers.
           For that, we can look to the chart on the right. It depicts the base
           revenue collected by the city shown by the green line compared to what
-          the city would have collected if the rate had not been lowered. Note
-          that this assumes the growth trends in the underlying tax base are
-          independent of the rate.
+          the city would have collected if the rate had not been lowered in
+          purple. Note that this assumes the growth trends in the underlying tax
+          base are independent of the rate.
         </p>
         <p>
           The difference between the base revenue and the counterfactual revenue
