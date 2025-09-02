@@ -12,9 +12,9 @@ export function AnalysisContent() {
           "To what extent has Truth in Taxation contrained property tax growth?"
         }
         findings={
-          "Between 2014 and 2024, Truth in Taxation has reduced tax liability by roughly $X million statewide."
+          "Between 2014 and 2024, but for Truth in Taxation statewide property tax liability would be roughly $2.3 billion higher."
         }
-        pubDate={""}
+        pubDate={"9/3/2025"}
         analyst={"Jared Gibbs"}
       />
       <AnalysisTemplateCard />
