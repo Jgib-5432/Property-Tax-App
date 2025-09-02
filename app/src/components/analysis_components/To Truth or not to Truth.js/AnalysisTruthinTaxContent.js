@@ -34,10 +34,10 @@ export function AnalysisTruthinTaxContent() {
           High-minded tax theory is all well and good, but how do we know that
           the system is actually working? More importantly, how effective has it
           actually been at constraining the growth of property taxes? In order
-          to answer these effectively, let's look to Tooele City as an example
-          of how Truth in Taxation operates in practice. Below are a pair of
-          charts comparing the tax rate the city applied relative to the total
-          value of property it taxed and the revenue it collected.
+          to answer these effectively, let&apos;s look to Tooele City as an
+          example of how Truth in Taxation operates in practice. Below are a
+          pair of charts comparing the tax rate the city applied relative to the
+          total value of property it taxed and the revenue it collected.
         </p>
         <div className="flex flex-row gap-4">
           <TooeleCityRateChart />
@@ -77,17 +77,17 @@ export function AnalysisTruthinTaxContent() {
           we can hold them aside for the purpose of this analysis.
         </p>
         <p>
-          Now that we have seen how Truth in Taxation works qualitatively, let's
-          turn to estimating how effective it has been at constraining property
-          taxes. In order to do that, we need to determine what tax rates would
-          have been if it were not in place to drive them down. Constructing
-          this counterfactual scenario is conceptually simple. By carrying
-          forward the existing tax rate (and adjusting it up when an increase
-          occurs), we can model what rates would have been in the absence of
-          Truth and Taxation. After all, if we assume that taxing entities would
-          not have lowered their rates voluntarily, then the only mechanism to
-          decrease them is Truth in Taxation. Computing that counterfactual
-          yields the scenario shown in the charts below.
+          Now that we have seen how Truth in Taxation works qualitatively,
+          let&apos;s turn to estimating how effective it has been at
+          constraining property taxes. In order to do that, we need to determine
+          what tax rates would have been if it were not in place to drive them
+          down. Constructing this counterfactual scenario is conceptually
+          simple. By carrying forward the existing tax rate (and adjusting it up
+          when an increase occurs), we can model what rates would have been in
+          the absence of Truth and Taxation. After all, if we assume that taxing
+          entities would not have lowered their rates voluntarily, then the only
+          mechanism to decrease them is Truth in Taxation. Computing that
+          counterfactual yields the scenario shown in the charts below.
         </p>
         <div className="flex flex-row gap-4">
           <CounterfactualRateChart />
@@ -114,15 +114,15 @@ export function AnalysisTruthinTaxContent() {
           The difference between the base revenue and the counterfactual revenue
           is shown by the black line. Since this difference is the benefit
           derived from Truth in Taxation, we can call this value for any given
-          year the 'Truth Dividend'. In essence, it measures how much savings
-          are accrued to taxpayers over time due to the ratcheting down of tax
-          rates. It would be equally accurate to describe this value as the
-          revenue forgone to the taxing entity due to Truth in Taxation. In the
-          case of Tooele City, residents are estimated to have paid $3.3 million
-          less in 2024 property taxes than they would have otherwise relative to
-          the 2014 baseline. In other words, Tooele City taxpayers received a
-          Truth Dividend in the amount of $3.3 million in 2024 (relative to the
-          2014 baseline).
+          year the &apos;Truth Dividend&apos;. In essence, it measures how much
+          savings are accrued to taxpayers over time due to the ratcheting down
+          of tax rates. It would be equally accurate to describe this value as
+          the revenue forgone to the taxing entity due to Truth in Taxation. In
+          the case of Tooele City, residents are estimated to have paid $3.3
+          million less in 2024 property taxes than they would have otherwise
+          relative to the 2014 baseline. In other words, Tooele City taxpayers
+          received a Truth Dividend in the amount of $3.3 million in 2024
+          (relative to the 2014 baseline).
         </p>
         <p>
           Naturally, fortunes vary by which taxing entity happens to be at
@@ -143,7 +143,7 @@ export function AnalysisTruthinTaxContent() {
           value, we discover that relative to the base year of 2014, total tax
           liability would be $2.3 billion higher today but for Truth in
           Taxation. To put that value in context, in fiscal year 2024, the
-          state's entire higher education budget was roughly $3 billion.
+          state&apos;s entire higher education budget was roughly $3 billion.
         </p>
       </div>
 
