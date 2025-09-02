@@ -12,7 +12,7 @@ import {
 } from "recharts";
 import entityData from "../../../../public/data/counterfactual_data.json";
 import entityList from "../../../../public/data/entity_list.json";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Select from "react-select";
 
 export function Sandbox() {
@@ -62,7 +62,7 @@ export function Sandbox() {
         <div className="flex flex-col grow bg-white text-black p-4 gap-2 rounded-xl shadow-xl overflow-auto">
           <div className="text-center text-2xl">
             {" "}
-            Applied vs Countfactual Tax rate: {currentEntity}
+            Base vs Countfactual Tax rate: {currentEntity}
           </div>
           <ResponsiveContainer width="100%" height="95%">
             <LineChart data={currentData}>
@@ -106,7 +106,7 @@ export function Sandbox() {
         <div className="flex flex-col grow bg-white text-black p-4 gap-2 rounded-xl shadow-xl overflow-auto">
           <div className="text-center text-2xl">
             {" "}
-            Observed vs Countfactual Revenue (M): {currentEntity}
+            Base vs Counterfactual Revenue (M): {currentEntity}
           </div>
           <ResponsiveContainer width="100%" height="95%">
             <LineChart data={currentData}>

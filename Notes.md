@@ -66,7 +66,10 @@ React Selector https://react-select.com/home
   - proposed vs certified rates in profile charts
 
 - Statewide Comp Page
+
   - 'Sort by' Selector
+
+- Some estiamte of tax liaiblity/ burden by tax area
 
 ## Cuts
 
