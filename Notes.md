@@ -69,7 +69,7 @@ React Selector https://react-select.com/home
 
   - 'Sort by' Selector
 
-- Some estiamte of tax liaiblity/ burden by tax area
+- Some estimates of tax liaiblity/ burden by tax area
 
 ## Cuts
 

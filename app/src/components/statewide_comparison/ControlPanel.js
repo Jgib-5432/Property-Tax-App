@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Select from "react-select";
-import entityList from "../../../public/data/entity_list.json";
 import countiesList from "../../../public/data/counties_list.json";
 import yearsList from "../../../public/data/years_list.json";
 import entityTypesList from "../../../public/data/entity_types_list.json";

@@ -1,7 +1,6 @@
 "use client";
 
 import { MapCard } from "@/components/map_page_components/MapCard";
-import { ControlPanel } from "@/components/map_page_components/ControlPanel";
 
 export function MapContent() {
   return (
