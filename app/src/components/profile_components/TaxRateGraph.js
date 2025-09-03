@@ -17,7 +17,7 @@ export function TaxRateGraph({ currentEntity, currentData }) {
         <LineChart data={currentData}>
           <CartesianGrid stroke="#eeeeee" />
           <Line
-            type="monotone"
+            type="linear"
             dataKey="Tax Rate"
             stroke="#196b24"
             strokeWidth={2}
