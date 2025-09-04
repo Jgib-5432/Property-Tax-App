@@ -29,7 +29,7 @@ export function ValueGraph({ currentEntity, currentData, currentTypes }) {
             <Line
               type="linear"
               dataKey="Non-primary Residential"
-              stroke="#8b4aa8"
+              stroke="#8ca890"
               strokeWidth={2}
             />
           )}
@@ -38,7 +38,7 @@ export function ValueGraph({ currentEntity, currentData, currentTypes }) {
             <Line
               type="linear"
               dataKey="Commercial"
-              stroke="#767167"
+              stroke="#5e5a52"
               strokeWidth={2}
             />
           )}
@@ -47,7 +47,7 @@ export function ValueGraph({ currentEntity, currentData, currentTypes }) {
             <Line
               type="linear"
               dataKey="Agricultural"
-              stroke="#bcb4a5"
+              stroke="#cccccc"
               strokeWidth={2}
             />
           )}
@@ -56,7 +56,7 @@ export function ValueGraph({ currentEntity, currentData, currentTypes }) {
             <Line
               type="linear"
               dataKey="Unimproved"
-              stroke="#2f2d29"
+              stroke="#000000"
               strokeWidth={2}
             />
           )}
@@ -74,7 +74,7 @@ export function ValueGraph({ currentEntity, currentData, currentTypes }) {
             <Line
               type="linear"
               dataKey="Centrally Assessed"
-              stroke="#171615"
+              stroke="#8b4aa8"
               strokeWidth={2}
             />
           )}
@@ -83,7 +83,7 @@ export function ValueGraph({ currentEntity, currentData, currentTypes }) {
             <Line
               type="linear"
               dataKey="Personal Property"
-              stroke="#5e5a52"
+              stroke="#bc9ddf"
               strokeWidth={2}
             />
           )}
@@ -92,6 +92,11 @@ export function ValueGraph({ currentEntity, currentData, currentTypes }) {
             dataKey="Tax Year"
             padding={{ left: 40 }}
             tick={{ fontSize: 18 }}
+            label={{
+              value: "Tax Year",
+              position: "insideBottomRight",
+              offset: 40,
+            }}
           />
           <YAxis
             interval="preserveStart"

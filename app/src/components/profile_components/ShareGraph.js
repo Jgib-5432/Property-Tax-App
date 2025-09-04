@@ -28,7 +28,7 @@ export function ShareGraph({ currentEntity, currentData, currentTypes }) {
             <Line
               type="linear"
               dataKey="Non-primary Residential, Share"
-              stroke="#8b4aa8"
+              stroke="#8ca890"
               strokeWidth={2}
             />
           )}
@@ -36,7 +36,7 @@ export function ShareGraph({ currentEntity, currentData, currentTypes }) {
             <Line
               type="linear"
               dataKey="Commercial, Share"
-              stroke="#767167"
+              stroke="#5e5a52"
               strokeWidth={2}
             />
           )}
@@ -44,7 +44,7 @@ export function ShareGraph({ currentEntity, currentData, currentTypes }) {
             <Line
               type="linear"
               dataKey="Agricultural, Share"
-              stroke="#bcb4a5"
+              stroke="#cccccc"
               strokeWidth={2}
             />
           )}
@@ -52,7 +52,7 @@ export function ShareGraph({ currentEntity, currentData, currentTypes }) {
             <Line
               type="linear"
               dataKey="Unimproved, Share"
-              stroke="#2f2d29"
+              stroke="#000000"
               strokeWidth={2}
             />
           )}
@@ -68,7 +68,7 @@ export function ShareGraph({ currentEntity, currentData, currentTypes }) {
             <Line
               type="linear"
               dataKey="Centrally Assessed, Share"
-              stroke="#171615"
+              stroke="#8b4aa8"
               strokeWidth={2}
             />
           )}
@@ -76,7 +76,7 @@ export function ShareGraph({ currentEntity, currentData, currentTypes }) {
             <Line
               type="linear"
               dataKey="Personal Property, Share"
-              stroke="#5e5a52"
+              stroke="#bc9ddf"
               strokeWidth={2}
             />
           )}
@@ -84,6 +84,11 @@ export function ShareGraph({ currentEntity, currentData, currentTypes }) {
             dataKey="Tax Year"
             padding={{ left: 40 }}
             tick={{ fontSize: 18 }}
+            label={{
+              value: "Tax Year",
+              position: "insideBottomRight",
+              offset: 40,
+            }}
           />
           <YAxis
             interval="preserveStart"

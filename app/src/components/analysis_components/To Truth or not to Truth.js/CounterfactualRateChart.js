@@ -41,6 +41,11 @@ export function CounterfactualRateChart() {
             dataKey="Tax Year"
             padding={{ left: 40 }}
             tick={{ fontSize: 14 }}
+            label={{
+              value: "Tax Year",
+              position: "insideBottomRight",
+              offset: 40,
+            }}
           />
           <YAxis
             dataKey="Tax Rate"

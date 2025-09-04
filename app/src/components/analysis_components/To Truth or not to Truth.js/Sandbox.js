@@ -28,7 +28,7 @@ export function Sandbox() {
   return (
     <div className="flex flex-row grow bg-[#eeeeee] text-black m-4 p-4 gap-4 rounded-xl shadow-xl overflow-auto">
       <div className="flex flex-col w-1/7 h-[150vh] gap-2 justify-between items-center">
-        <div className="flex flex-col w-full h-3/8 bg-white p-4 gap-2 rounded-xl shadow-xl justify-center">
+        <div className="flex flex-col w-full  bg-white p-4 gap-2 rounded-xl shadow-xl justify-center">
           <p className="p-2 indent-4 text-justify overflow-auto">
             This chart shows the observed tax rate in green relative to the
             counterfactual rate shown in purple. The black line is the
@@ -45,7 +45,7 @@ export function Sandbox() {
           <Select options={entityList} onChange={changeEntity} />
         </div>
 
-        <div className="flex flex-col w-full h-3/8 bg-white p-4 gap-2 rounded-xl shadow-xl justify-center">
+        <div className="flex flex-col w-full bg-white p-4 gap-2 rounded-xl shadow-xl justify-center">
           <p className="p-2 indent-4 text-justify overflow-auto">
             This chart shows the observed tax revenue in green relative to the
             counterfactual revenue shown in purple. The black line is the
@@ -89,6 +89,11 @@ export function Sandbox() {
                 dataKey="Tax Year"
                 padding={{ left: 40 }}
                 tick={{ fontSize: 18 }}
+                label={{
+                  value: "Tax Year",
+                  position: "insideBottomRight",
+                  offset: 40,
+                }}
               />
               <YAxis
                 dataKey="Tax Rate"
@@ -133,6 +138,11 @@ export function Sandbox() {
                 dataKey="Tax Year"
                 padding={{ left: 40 }}
                 tick={{ fontSize: 18 }}
+                label={{
+                  value: "Tax Year",
+                  position: "insideBottomRight",
+                  offset: 40,
+                }}
               />
               <YAxis
                 interval="preserveStart"

@@ -38,14 +38,14 @@ export function ShareCompGraph({ currentData, currentYear }) {
           />
           <Bar
             dataKey="Non-primary Residential, Share"
-            fill="#8b4aa8"
+            fill="#8ca890"
             stackId="a"
           />
-          <Bar dataKey="Commercial, Share" fill="#767167" stackId="a" />
-          <Bar dataKey="Agricultural, Share" fill="#bcb4a5" stackId="a" />
-          <Bar dataKey="Unimproved, Share" fill="#2f2d29" stackId="a" />
-          <Bar dataKey="Centrally Assessed, Share" fill="#171615" stackId="a" />
-          <Bar dataKey="Personal Property, Share" fill="#5e5a52" stackId="a" />
+          <Bar dataKey="Commercial, Share" fill="#5e5a52" stackId="a" />
+          <Bar dataKey="Agricultural, Share" fill="#cccccc" stackId="a" />
+          <Bar dataKey="Unimproved, Share" fill="#000000" stackId="a" />
+          <Bar dataKey="Centrally Assessed, Share" fill="#8b4aa8" stackId="a" />
+          <Bar dataKey="Personal Property, Share" fill="#bc9ddf" stackId="a" />
         </BarChart>
       </ResponsiveContainer>
     </div>

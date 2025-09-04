@@ -13,8 +13,8 @@ Color Palette:
 - green #196b24
 - lite green #8ca890
 - purple #8b4aa8
-- lite purple #9d4edd
-- tan #ca9b54
+- lite purple #bc9ddf
+- tan #bcb4a5
 - gray #5e5a52
 - lite gray #cccccc
 - black #000000
@@ -39,20 +39,18 @@ React Selector https://react-select.com/home
 - Feedback edits:
 
   - fix spacing on statewide comparison y-axis labels
-  - condense chart descriptions
-  - unit notation in title only, not in axis
-  - swap out color palette to Alejandra's suggestion
+  - properly capitalize entity names
+  - drop county name from school district names
 
   - Show Truth Dividend as Negative
-  - entity selector: group entities by entity type
-  - fix sandbox dynamic spacing
-  - properly capitalize entity names
-  - 'select all' option for property types?
+
   - define entity types
-  - note that years are tax years/ calendar years (not fiscal years)
+
   - talk about Unitah data missing years with Tax Commission
 
 ## Additional Development Checklist
+
+- design for vertical view (mobile views?)
 
 - Integrate personal property into analysis calculations
 
@@ -68,6 +66,9 @@ React Selector https://react-select.com/home
 - Add entity Summary information to map page
 
 - Link sidebar titles in home page to content
+
+  - entity selector: group entities by entity type
+  - 'select all' option for various selectors?
 
 - add additional general information to home page:
 
