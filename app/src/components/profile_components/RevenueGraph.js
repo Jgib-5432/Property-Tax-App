@@ -17,7 +17,7 @@ export function RevenueGraph({ currentEntity, currentData }) {
         <LineChart data={currentData}>
           <CartesianGrid stroke="#eeeeee" />
           <Line
-            type="monotone"
+            type="linear"
             dataKey="Revenue, Total"
             stroke="#196b24"
             strokeWidth={2}

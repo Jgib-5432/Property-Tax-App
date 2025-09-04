@@ -26,13 +26,13 @@ export function CounterfactualRateChart() {
         <LineChart data={currentData}>
           <CartesianGrid stroke="#eeeeee" />
           <Line
-            type="monotone"
+            type="linear"
             dataKey="Tax Rate"
             stroke="#196b24"
             strokeWidth={2}
           />
           <Line
-            type="monotone"
+            type="linear"
             dataKey="Counterfactual Tax Rate"
             stroke="#8b4aa8"
             strokeWidth={2}

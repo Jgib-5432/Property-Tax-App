@@ -26,19 +26,19 @@ export function CounterfactualRevenueChart() {
         <LineChart data={currentData}>
           <CartesianGrid stroke="#eeeeee" />
           <Line
-            type="monotone"
+            type="linear"
             dataKey="Counterfactual Revenue"
             stroke="#8b4aa8"
             strokeWidth={2}
           />
           <Line
-            type="monotone"
+            type="linear"
             dataKey="Base Revenue"
             stroke="#196b24"
             strokeWidth={2}
           />
           <Line
-            type="monotone"
+            type="linear"
             dataKey="Truth Dividend"
             stroke="#000000"
             strokeWidth={2}

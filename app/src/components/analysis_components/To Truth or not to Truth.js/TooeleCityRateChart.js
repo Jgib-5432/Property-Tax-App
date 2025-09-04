@@ -26,14 +26,14 @@ export function TooeleCityRateChart() {
         <LineChart data={currentData}>
           <CartesianGrid stroke="#eeeeee" />
           <Line
-            type="monotone"
+            type="linear"
             yAxisId="left"
             dataKey="Tax Rate"
             stroke="#196b24"
             strokeWidth={2}
           />
           <Line
-            type="monotone"
+            type="linear"
             yAxisId="right"
             dataKey="Baseline Property"
             stroke="#111111"

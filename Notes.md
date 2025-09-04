@@ -8,6 +8,17 @@ Example Entities:
 - emery county
 - Washington county flood control, Washington
 
+Color Palette:
+
+- green #196b24
+- lite green #8ca890
+- purple #8b4aa8
+- lite purple #9d4edd
+- tan #ca9b54
+- gray #5e5a52
+- lite gray #cccccc
+- black #000000
+
 ## Resources
 
 Markdown Math notation https://www.upyesp.org/posts/makrdown-vscode-math-notation/
@@ -20,21 +31,26 @@ React Selector https://react-select.com/home
 
 - General:
 
-  - Vercel Protptype deployment https://vercel.com/pricing
-
-- Analysis Page
-
-  - To Truth or Not to Truth: How Truth in Taxation contrains property taxes
-
-    - explain what truth in tax is and how it works
-    - show the relationship between rate, property, and revenue graphically
-    - aggregate to a statewide
-    - provide sandbox by entity
-
   - Resdiential Tilt: Why taxes are going up on homeowners
   - Inflation Adjustment: needed revision or tax hikes in disguise?
     - 5 year rolling average
     - capped growth
+
+- Feedback edits:
+
+  - fix spacing on statewide comparison y-axis labels
+  - condense chart descriptions
+  - unit notation in title only, not in axis
+  - swap out color palette to Alejandra's suggestion
+
+  - Show Truth Dividend as Negative
+  - entity selector: group entities by entity type
+  - fix sandbox dynamic spacing
+  - properly capitalize entity names
+  - 'select all' option for property types?
+  - define entity types
+  - note that years are tax years/ calendar years (not fiscal years)
+  - talk about Unitah data missing years with Tax Commission
 
 ## Additional Development Checklist
 

@@ -23,7 +23,7 @@ export function TooeleCityRevenueChart() {
         <LineChart data={currentData}>
           <CartesianGrid stroke="#eeeeee" />
           <Line
-            type="monotone"
+            type="linear"
             dataKey="Base Revenue"
             stroke="#196b24"
             strokeWidth={2}
