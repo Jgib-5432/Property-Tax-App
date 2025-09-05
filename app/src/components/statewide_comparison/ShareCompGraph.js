@@ -13,7 +13,7 @@ export function ShareCompGraph({ currentData, currentYear }) {
   return (
     <div className="flex flex-col h-full w-full p-2 gap-2 bg-white place-self-end justify-center items-center rounded-xl shadow-xl">
       <div>Share of Tax Base by Property Type, {currentYear} </div>
-      <ResponsiveContainer width="95%" height="95%">
+      <ResponsiveContainer width="100%" height="95%">
         <BarChart data={currentData} layout="vertical">
           <CartesianGrid stroke="#eeeeee" />
           <XAxis
@@ -25,9 +25,9 @@ export function ShareCompGraph({ currentData, currentYear }) {
           <YAxis
             dataKey="Entity Name"
             type="category"
-            tick={{ fontSize: 14 }}
+            tick={{ fontSize: 12 }}
             interval={0}
-            width={90}
+            width={160}
           />
           <Tooltip formatter={(number) => `${number.toFixed(2) * 100}%`} />
           <Legend />

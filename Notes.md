@@ -38,10 +38,6 @@ React Selector https://react-select.com/home
 
 - Feedback edits:
 
-  - fix spacing on statewide comparison y-axis labels
-  - properly capitalize entity names
-  - drop county name from school district names
-
   - Show Truth Dividend as Negative
 
   - define entity types
