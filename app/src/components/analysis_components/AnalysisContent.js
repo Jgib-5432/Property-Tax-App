@@ -17,6 +17,16 @@ export function AnalysisContent() {
         pubDate={"9/3/2025"}
         analyst={"Jared Gibbs"}
       />
+      <AnalysisTemplateCard
+        title={"Residential Tilt"}
+        link={"/pages/analysis/reside_tilt"}
+        question={
+          "How much has the share of property tax liability shifted onto homeowners?"
+        }
+        findings={""}
+        pubDate={"9/10/2025"}
+        analyst={"Jared Gibbs"}
+      />
       <AnalysisTemplateCard />
     </div>
   );

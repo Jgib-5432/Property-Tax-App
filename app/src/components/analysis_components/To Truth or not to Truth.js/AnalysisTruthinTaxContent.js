@@ -77,8 +77,8 @@ export function AnalysisTruthinTaxContent() {
           we can hold them aside for the purpose of this analysis.
         </p>
         <p>
-          Now that we have seen how Truth in Taxation works qualitatively,
-          let&apos;s turn to estimating how effective it has been at
+          Now that we have seen how the system works qualitatively, let&apos;s
+          turn to estimating how effective Truth in Taxation has been at
           constraining property taxes. In order to do that, we need to determine
           what tax rates would have been if it were not in place to drive them
           down. Constructing this counterfactual scenario is conceptually
@@ -142,8 +142,7 @@ export function AnalysisTruthinTaxContent() {
           liability would be without Truth in Taxation. When we compute that
           value, we discover that relative to the base year of 2014, total tax
           liability would be $2.3 billion higher today but for Truth in
-          Taxation. To put that value in context, in fiscal year 2024, the
-          state&apos;s entire higher education budget was roughly $3 billion.
+          Taxation.
         </p>
       </div>
 
