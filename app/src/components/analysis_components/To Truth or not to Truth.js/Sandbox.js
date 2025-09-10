@@ -29,7 +29,7 @@ export function Sandbox() {
     <div className="flex flex-row grow bg-[#eeeeee] text-black m-4 p-4 gap-4 rounded-xl shadow-xl overflow-auto">
       <div className="flex flex-col w-1/7 h-[150vh] gap-2 justify-between items-center">
         <div className="flex flex-col w-full  bg-white p-4 gap-2 rounded-xl shadow-xl justify-center">
-          <p className="p-2 indent-4 text-justify overflow-auto">
+          <p className="p-2 indent-4 text-center overflow-auto">
             This chart shows the observed tax rate in green relative to the
             counterfactual rate shown in purple. The black line is the
             difference between the two. The counterfactual rate shows what the
@@ -46,7 +46,7 @@ export function Sandbox() {
         </div>
 
         <div className="flex flex-col w-full bg-white p-4 gap-2 rounded-xl shadow-xl justify-center">
-          <p className="p-2 indent-4 text-justify overflow-auto">
+          <p className="p-2 indent-4 text-center overflow-auto">
             This chart shows the observed tax revenue in green relative to the
             counterfactual revenue shown in purple. The black line is the
             difference between the two. The counterfactual revenue shows what

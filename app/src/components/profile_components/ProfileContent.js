@@ -62,28 +62,28 @@ export function ProfileContent() {
      <div className="flex flex-col grow text-2xl gap-4 p-4 bg-[#eeeeee] text-black rounded-xl shadow-xl/20 items-center ">
         <div className="flex flex-row  h-180 w-full gap-2">
           <TaxRateGraph currentEntity={currentEntity} currentData={currentData}/>
-          <div className="flex flex-col w-2/10 bg-white place-self-end justify-center items-center self-center rounded-xl shadow-xl text-base p-4 indent-4 text-justify overflow-auto">
+          <div className="flex flex-col w-2/10 bg-white place-self-end justify-center items-center self-center rounded-xl shadow-xl text-base p-4 indent-4 text-center overflow-auto">
           <ReactMarkdown>{rateContent}</ReactMarkdown>
           </div>
         </div>
 
         <div className="flex flex-row  h-180 w-full gap-2">
           <RevenueGraph currentEntity={currentEntity} currentData={currentData}/>
-          <div className="flex flex-col w-2/10 bg-white place-self-end justify-center items-center self-center rounded-xl shadow-xl text-base p-4 indent-4 text-justify overflow-auto">
+          <div className="flex flex-col w-2/10 bg-white place-self-end justify-center items-center self-center rounded-xl shadow-xl text-base p-4 indent-4 text-center overflow-auto">
           <ReactMarkdown>{revenueContent}</ReactMarkdown>
           </div>
         </div>
 
         <div className="flex flex-row h-180 w-full gap-2">
           <ValueGraph currentEntity={currentEntity} currentData={currentData} currentTypes= {currentTypes}/>
-          <div className="flex flex-col w-2/10 bg-white place-self-end justify-center items-center self-center rounded-xl shadow-xl text-base p-4 indent-4 text-justify overflow-auto">
+          <div className="flex flex-col w-2/10 bg-white place-self-end justify-center items-center self-center rounded-xl shadow-xl text-base p-4 indent-4 text-center overflow-auto">
           <ReactMarkdown>{valueContent}</ReactMarkdown>
           </div>
         </div>
 
         <div className="flex flex-row  h-180 w-full gap-2">
           <ShareGraph currentEntity={currentEntity} currentData={currentData} currentTypes= {currentTypes}/>
-          <div className="flex flex-col w-2/10 bg-white place-self-end justify-center items-center self-center rounded-xl shadow-xl text-base p-4 indent-4 text-justify overflow-auto">
+          <div className="flex flex-col w-2/10 bg-white place-self-end justify-center items-center self-center rounded-xl shadow-xl text-base p-4 indent-4 text-center overflow-auto">
           <ReactMarkdown>{shareContent}</ReactMarkdown>
           </div>
         </div>

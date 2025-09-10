@@ -38,7 +38,9 @@ React Selector https://react-select.com/home
 
 - Feedback edits:
 
-  - Show Truth Dividend as Negative
+  - text justification?
+
+  - Put sandbox at the top of the page?
 
   - define entity types
 
