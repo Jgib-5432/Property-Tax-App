@@ -23,6 +23,8 @@ export function AnalysisTruthinTaxContent() {
       <div className="text-4xl italic">
         How Truth in Taxation constrains Property Taxes
       </div>
+      <Sandbox />
+
       <div className="grid w-8/10 bg-[#eeeeee] text-lg text-justify indent-8 p-8 gap-4 rounded-xl shadow-xl overflow-auto">
         <p className="text-2xl text-center">Introduction</p>
         <ReactMarkdown>{markdownContent}</ReactMarkdown>
@@ -145,9 +147,6 @@ export function AnalysisTruthinTaxContent() {
           Taxation.
         </p>
       </div>
-
-      <div className="text-4xl mt-8">Sandbox </div>
-      <Sandbox />
     </div>
   );
 }

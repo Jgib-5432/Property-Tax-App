@@ -38,13 +38,31 @@ React Selector https://react-select.com/home
 
 - Feedback edits:
 
-  - text justification?
-
-  - Put sandbox at the top of the page?
-
   - define entity types
 
-  - talk about Unitah data missing years with Tax Commission
+  - move property tax types to a glossary page
+
+  - Combine tax rate and revenue charts in entitiy profile page
+
+  - Make share graph stacked on entity profiles page
+
+  - graph stacked bar chart over time for comparison?
+
+  - Instructions/ User tutorial?
+
+  - Cover homepage into issues of interest? (rate, revenue, value, share, comparisons)
+
+  - Hide map and analysis pages until ready for prime time?
+
+  - update tax rate data from certified rate site
+
+  - Talk to Ben about public ed story
+
+  - How do we tell the story? Why have taxes gone up?
+
+    - Rates, revenue, values, share
+
+  - Vet app with Tax, LRGC, and GOPB before launch
 
 ## Additional Development Checklist
 

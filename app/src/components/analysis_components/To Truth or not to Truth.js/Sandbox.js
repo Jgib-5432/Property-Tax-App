@@ -148,9 +148,21 @@ export function Sandbox() {
                 interval="preserveStart"
                 domain={[0, (dataMax) => dataMax * 1.3]}
                 tick={{ fontSize: 18 }}
-                tickFormatter={(number) => `$${number.toFixed(0)}`}
+                tickFormatter={(value) =>
+                  new Intl.NumberFormat("en", {
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 2,
+                  }).format(value)
+                }
               />
-              <Tooltip formatter={(number) => `$${number.toFixed(1)} (M)`} />
+              <Tooltip
+                formatter={(value) =>
+                  new Intl.NumberFormat("en", {
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 0,
+                  }).format(value)
+                }
+              />
               <Legend align="center" verticalAlign="bottom" />
             </LineChart>
           </ResponsiveContainer>
