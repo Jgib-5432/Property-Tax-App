@@ -38,31 +38,31 @@ React Selector https://react-select.com/home
 
 - Feedback edits:
 
-  - define entity types
+Medium
 
-  - move property tax types to a glossary page
+- update tax rate data from certified rate site
 
-  - Combine tax rate and revenue charts in entitiy profile page
+- define entity types
 
-  - Make share graph stacked on entity profiles page
+- move property tax types to a glossary page
 
-  - graph stacked bar chart over time for comparison?
+- Hide map and analysis pages until ready for prime time?
 
-  - Instructions/ User tutorial?
+Hard
 
-  - Cover homepage into issues of interest? (rate, revenue, value, share, comparisons)
+- Instructions/ User tutorial?
 
-  - Hide map and analysis pages until ready for prime time?
+- Convert homepage into issues of interest? (rate, revenue, value, share, comparisons)
 
-  - update tax rate data from certified rate site
+Need others
 
-  - Talk to Ben about public ed story
+- Talk to Ben about public ed story
 
-  - How do we tell the story? Why have taxes gone up?
+- How do we tell the story? Why have taxes gone up?
 
-    - Rates, revenue, values, share
+  - Rates, revenue, values, share
 
-  - Vet app with Tax, LRGC, and GOPB before launch
+- Vet app with Tax, LRGC, and GOPB before launch
 
 ## Additional Development Checklist
 

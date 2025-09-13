@@ -1,6 +1,6 @@
 import {
-  LineChart,
-  Line,
+  AreaChart,
+  Area,
   XAxis,
   YAxis,
   ResponsiveContainer,
@@ -14,69 +14,85 @@ export function ShareGraph({ currentEntity, currentData, currentTypes }) {
     <div className="flex flex-col h-full w-full p-2 gap-2 bg-white place-self-end justify-center items-center rounded-xl shadow-xl">
       <div>Share of Taxable Value: {currentEntity} </div>
       <ResponsiveContainer width="95%" height="95%">
-        <LineChart data={currentData}>
+        <AreaChart data={currentData}>
           <CartesianGrid stroke="#eeeeee" />
           {currentTypes.includes("Primary Residential") && (
-            <Line
+            <Area
               type="linear"
+              stackId="1"
               dataKey="Primary Residential, Share"
               stroke="#196b24"
+              fill="#196b24"
               strokeWidth={2}
             />
           )}
           {currentTypes.includes("Non-primary Residential") && (
-            <Line
+            <Area
               type="linear"
+              stackId="1"
               dataKey="Non-primary Residential, Share"
               stroke="#8ca890"
+              fill="#8ca890"
               strokeWidth={2}
             />
           )}
           {currentTypes.includes("Commercial") && (
-            <Line
+            <Area
               type="linear"
+              stackId="1"
               dataKey="Commercial, Share"
               stroke="#5e5a52"
+              fill="#5e5a52"
               strokeWidth={2}
             />
           )}
           {currentTypes.includes("Agricultural") && (
-            <Line
+            <Area
               type="linear"
+              stackId="1"
               dataKey="Agricultural, Share"
               stroke="#cccccc"
+              fill="#cccccc"
               strokeWidth={2}
             />
           )}
           {currentTypes.includes("Unimproved") && (
-            <Line
+            <Area
               type="linear"
+              stackId="1"
               dataKey="Unimproved, Share"
               stroke="#000000"
+              fill="#000000"
               strokeWidth={2}
             />
           )}
           {currentTypes.includes("Total Real Property") && (
-            <Line
+            <Area
               type="linear"
+              stackId="1"
               dataKey="Total Real Property, Share"
               stroke="#28A939"
+              fill="#28A939"
               strokeWidth={2}
             />
           )}
           {currentTypes.includes("Centrally Assessed") && (
-            <Line
+            <Area
               type="linear"
+              stackId="1"
               dataKey="Centrally Assessed, Share"
               stroke="#8b4aa8"
+              fill="#8b4aa8"
               strokeWidth={2}
             />
           )}
           {currentTypes.includes("Personal Property") && (
-            <Line
+            <Area
               type="linear"
+              stackId="1"
               dataKey="Personal Property, Share"
               stroke="#bc9ddf"
+              fill="#bc9ddf"
               strokeWidth={2}
             />
           )}
@@ -98,7 +114,7 @@ export function ShareGraph({ currentEntity, currentData, currentTypes }) {
           />
           <Tooltip formatter={(number) => `${number.toFixed(2) * 100}%`} />
           <Legend align="center" verticalAlign="bottom" />
-        </LineChart>
+        </AreaChart>
       </ResponsiveContainer>
     </div>
   );

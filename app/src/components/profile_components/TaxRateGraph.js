@@ -12,14 +12,22 @@ import {
 export function TaxRateGraph({ currentEntity, currentData }) {
   return (
     <div className="flex flex-col h-full w-full p-2 gap-2 bg-white place-self-end justify-center items-center rounded-xl shadow-xl">
-      <div>Tax Rate: {currentEntity} </div>
+      <div>Tax Rate & Revenue (M): {currentEntity} </div>
       <ResponsiveContainer width="95%" height="95%">
         <LineChart data={currentData}>
           <CartesianGrid stroke="#eeeeee" />
           <Line
             type="linear"
+            yAxisId="left"
             dataKey="Tax Rate"
             stroke="#196b24"
+            strokeWidth={2}
+          />
+          <Line
+            type="linear"
+            yAxisId="right"
+            dataKey="Revenue, Total"
+            stroke="#8b4aa8"
             strokeWidth={2}
           />
           <XAxis
@@ -34,12 +42,30 @@ export function TaxRateGraph({ currentEntity, currentData }) {
           />
           <YAxis
             dataKey="Tax Rate"
+            yAxisId="left"
             interval="preserveStart"
             domain={[0, (dataMax) => dataMax * 1.3]}
             tick={{ fontSize: 18 }}
             tickFormatter={(number) => `${number.toFixed(2)}%`}
           />
-          <Tooltip formatter={(number) => `${number.toFixed(3)}%`} />
+          <YAxis
+            dataKey="Revenue, Total"
+            yAxisId="right"
+            orientation="right"
+            interval="preserveStart"
+            domain={[0, (dataMax) => dataMax * 1.3]}
+            tick={{ fontSize: 18 }}
+            tickFormatter={(value) =>
+              new Intl.NumberFormat("en", {
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 2,
+              }).format(value)
+            }
+          />
+          <Tooltip
+            yAxisId="right"
+            formatter={(number) => `${number.toFixed(2)}`}
+          />{" "}
           <Legend align="center" verticalAlign="bottom" />
         </LineChart>
       </ResponsiveContainer>
