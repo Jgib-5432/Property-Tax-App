@@ -44,10 +44,6 @@ Medium
 
 - define entity types
 
-- move property tax types to a glossary page
-
-- Hide map and analysis pages until ready for prime time?
-
 Hard
 
 - Instructions/ User tutorial?

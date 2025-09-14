@@ -1,5 +1,6 @@
 import { NavBar } from "@/components/NavBar";
 import { HomeContent } from "@/components/home_page_components/HomeContent";
+import { GlossaryContent } from "@/components/home_page_components/GlossaryContent";
 import { MapContent } from "@/components/map_page_components/MapContent";
 import { ProfileContent } from "@/components/profile_components/ProfileContent";
 import { AnalysisContent } from "@/components/analysis_components/AnalysisContent";
@@ -16,6 +17,7 @@ export function PageTemplate({ page }) {
   pageMap.set("Statewide Comparison", <StatewideContent />);
   pageMap.set("truth_in_tax", <AnalysisTruthinTaxContent />);
   pageMap.set("reside_tilt", <AnalysisResidTiltContent />);
+  pageMap.set("Glossary", <GlossaryContent />);
 
   return (
     <div className="flex flex-col h-screen w-full justify-between">

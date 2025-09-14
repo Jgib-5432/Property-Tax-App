@@ -6,12 +6,7 @@ export function NavBar() {
       <Link href="/" className="place-self-center text-white no-underline">
         Home
       </Link>
-      <Link
-        href="/pages/map"
-        className="place-self-center text-white no-underline"
-      >
-        Map
-      </Link>
+
       <Link
         href="/pages/entity_profiles"
         className="place-self-center text-white no-underline"
@@ -25,11 +20,27 @@ export function NavBar() {
         Statewide Comparison
       </Link>
       <Link
+        href="/pages/glossary"
+        className="place-self-center text-white no-underline"
+      >
+        Glossary
+      </Link>
+    </div>
+  );
+}
+
+/*
+      <Link
+        href="/pages/map"
+        className="place-self-center text-white no-underline"
+      >
+        Map
+      </Link>
+
+            <Link
         href="/pages/analysis"
         className="place-self-center text-white no-underline"
       >
         Analysis
       </Link>
-    </div>
-  );
-}
+*/
