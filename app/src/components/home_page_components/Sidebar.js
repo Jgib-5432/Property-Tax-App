@@ -29,6 +29,13 @@ export function Sidebar() {
             <div className="text-base"> Age-based Property </div>
             <div className="text-base"> Fee-in-lieu </div>
             <div className="text-base"> Mobile Home </div>
+            <div className="font-bold text-2xl">Tax Entities</div>
+            <div className="font-base">Counties</div>
+            <div className="font-base">Municipalities</div>
+            <div className="font-base">School District</div>
+            <div className="font-base">Special District</div>
+            <div className="font-base">Special Service District</div>
+            <div className="font-base">Public Infrastructure District</div>
           </div>
         )}
       </div>

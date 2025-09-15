@@ -81,7 +81,7 @@ export function RealPropCard() {
   return (
     <>
       <button
-        className="grid bg-white row-start-2 col-start-2 rounded-xl shadow-xl/20 place-content-center p-8 gap-2 text-2xl"
+        className="grid bg-white row-start-2 col-start-2 rounded-xl shadow-xl/20 place-content-center p-2 gap-2 text-2xl"
         onClick={toggleCollapse}
       >
         Real Property

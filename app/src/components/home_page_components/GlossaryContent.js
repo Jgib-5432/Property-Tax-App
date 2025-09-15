@@ -5,6 +5,13 @@ import { TitleCard } from "@/components/home_page_components/TitleCard";
 import { RealPropCard } from "@/components/home_page_components/RealPropCard";
 import { CenAsPropCard } from "@/components/home_page_components/CenAsPropCard";
 import { PerPropCard } from "@/components/home_page_components/PerPropCard";
+import { EntityTitleCard } from "@/components/home_page_components/EntitytTitleCard";
+import { CountyEntCard } from "@/components/home_page_components/CountyEntCard";
+import { MuniEntCard } from "@/components/home_page_components/MuniEntCard";
+import { SchoolEntCard } from "@/components/home_page_components/SchoolEntCard";
+import { SpecialEntCard } from "@/components/home_page_components/SpecialEntCard";
+import { ServiceEntCard } from "@/components/home_page_components/ServiceEntCard";
+import { PIDEntCard } from "@/components/home_page_components/PIDEntCard";
 
 export function GlossaryContent() {
   return (
@@ -15,6 +22,13 @@ export function GlossaryContent() {
         <RealPropCard />
         <CenAsPropCard />
         <PerPropCard />
+        <EntityTitleCard />
+        <CountyEntCard />
+        <MuniEntCard />
+        <SchoolEntCard />
+        <SpecialEntCard />
+        <ServiceEntCard />
+        <PIDEntCard />
       </div>
     </div>
   );

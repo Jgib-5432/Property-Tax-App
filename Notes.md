@@ -1,5 +1,7 @@
 # App Notes
 
+## General
+
 Example Entities:
 
 - Tooele City
@@ -27,6 +29,8 @@ Recharts https://recharts.org/en-US
 
 React Selector https://react-select.com/home
 
+Utah Assosiation of Special Districts: https://www.uasd.org/about-us
+
 ## Minimum Viable Product Checklist
 
 - General:
@@ -38,27 +42,27 @@ React Selector https://react-select.com/home
 
 - Feedback edits:
 
-Medium
+  - add divider to glossary sidebar
 
-- update tax rate data from certified rate site
+  - update tax rate data from certified rate site
 
-- define entity types
+  - define entity types
 
-Hard
+  Hard
 
-- Instructions/ User tutorial?
+  - Instructions/ User tutorial?
 
-- Convert homepage into issues of interest? (rate, revenue, value, share, comparisons)
+  - Convert homepage into issues of interest? (rate, revenue, value, share, comparisons)
 
-Need others
+  Need others
 
-- Talk to Ben about public ed story
+  - Talk to Ben about public ed story
 
-- How do we tell the story? Why have taxes gone up?
+  - How do we tell the story? Why have taxes gone up?
 
-  - Rates, revenue, values, share
+    - Rates, revenue, values, share
 
-- Vet app with Tax, LRGC, and GOPB before launch
+  - Vet app with Tax, LRGC, and GOPB before launch
 
 ## Additional Development Checklist
 
