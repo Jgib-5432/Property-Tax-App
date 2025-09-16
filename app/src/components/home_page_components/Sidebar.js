@@ -35,7 +35,7 @@ export function Sidebar() {
             <div className="font-base">School District</div>
             <div className="font-base">Special District</div>
             <div className="font-base">Special Service District</div>
-            <div className="font-base">Public Infrastructure District</div>
+            <div className="font-base">PID</div>
           </div>
         )}
       </div>

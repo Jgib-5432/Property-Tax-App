@@ -22,8 +22,8 @@ export function PageTemplate({ page }) {
   return (
     <div className="flex flex-col h-screen w-full justify-between">
       <div className="flex flex-col  h-1/10 max-h-34 justify-start static">
-        <div className="flex bg-[#196b24] h-1/3 pl-4 text-xl items-center">
-          Property Tax App
+        <div className="flex bg-[#196b24] h-1/3 pl-8 text-2xl items-center">
+          Vesta {"\u26B6"}
         </div>
         <div className="flex bg-[#47443e] h-2/3  rounded-b-xl">
           <a href="https://le.utah.gov/" className="flex">

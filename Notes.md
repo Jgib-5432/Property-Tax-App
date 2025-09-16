@@ -42,11 +42,17 @@ Utah Assosiation of Special Districts: https://www.uasd.org/about-us
 
 - Feedback edits:
 
-  - add divider to glossary sidebar
-
   - update tax rate data from certified rate site
 
   - define entity types
+
+  - Make sidebar and control panels the same size
+
+  - set axis type explicitly for entity profile page?
+
+  - set max height for bottom bar soliciting feedback
+
+  - set a background for glossary page?
 
   Hard
 
