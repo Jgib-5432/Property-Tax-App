@@ -37,7 +37,7 @@ export function PageTemplate({ page }) {
         </div>
       </div>
       {pageMap.get(page)}
-      <div className="flex justify-center bg-[#47443e] h-1/10 max-h-32 object-bottom  rounded-t-xl">
+      <div className="flex justify-center bg-[#47443e] h-1/10 max-h-16 object-bottom  rounded-t-xl">
         <div className="p-2 text-l place-self-center">
           <div>A project in progress from the Legislative Fiscal Analyst </div>
           <div>Questions? Contact Jared Gibbs (Jgibbs@le.utah.gov)</div>

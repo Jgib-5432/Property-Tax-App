@@ -50,8 +50,6 @@ Utah Assosiation of Special Districts: https://www.uasd.org/about-us
 
   - set axis type explicitly for entity profile page?
 
-  - set max height for bottom bar soliciting feedback
-
   - set a background for glossary page?
 
   Hard

@@ -18,7 +18,7 @@ export function PIDEntCard() {
       </button>
       {isOpen && (
         <div className="grid text-xl bg-white row-start-11 col-start-3 col-span-4 rounded-xl shadow-xl/20 p-4 gap-2 place-content-center text-xl/8 indent-16 p-8 text-justify">
-          <p>Public Infrastructure District </p>
+          <p>Public Infrastructure District 17D-4-303</p>
         </div>
       )}
     </>
