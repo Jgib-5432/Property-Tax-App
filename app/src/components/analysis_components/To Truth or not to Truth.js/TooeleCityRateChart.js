@@ -13,8 +13,11 @@ import entityData from "../../../../public/data/counterfactual_data.json";
 
 export function TooeleCityRateChart() {
   const currentData = entityData.filter(
-    (item) => item["Entity Name"] === "Tooele city, Tooele"
+    (item) => item["Entity Name"] === "Tooele City, Tooele"
   );
+
+  console.log(entityData);
+  console.log(currentData);
 
   return (
     <div className="flex flex-col h-96 w-5/10 bg-white text-black p-4 gap-2 rounded-xl shadow-xl">

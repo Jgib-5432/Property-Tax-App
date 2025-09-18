@@ -13,7 +13,7 @@ export function TaxRateGraph({ currentEntity, currentData }) {
   return (
     <div className="flex flex-col h-full w-full p-2 gap-2 bg-white place-self-end justify-center items-center rounded-xl shadow-xl">
       <div>Tax Rate & Revenue (M): {currentEntity} </div>
-      <ResponsiveContainer width="95%" height="95%">
+      <ResponsiveContainer width="98%" height="95%">
         <LineChart data={currentData}>
           <CartesianGrid stroke="#eeeeee" />
           <Line

@@ -143,7 +143,7 @@ export function AnalysisTruthinTaxContent() {
           aggregate difference between existing tax liability and where
           liability would be without Truth in Taxation. When we compute that
           value, we discover that relative to the base year of 2014, total tax
-          liability would be $2.3 billion higher today but for Truth in
+          liability would be $2.5 billion higher today but for Truth in
           Taxation.
         </p>
       </div>

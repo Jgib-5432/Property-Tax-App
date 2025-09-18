@@ -13,7 +13,7 @@ import entityData from "../../../../public/data/counterfactual_data.json";
 
 export function CounterfactualRevenueChart() {
   const currentData = entityData.filter(
-    (item) => item["Entity Name"] === "Tooele city, Tooele"
+    (item) => item["Entity Name"] === "Tooele City, Tooele"
   );
 
   return (

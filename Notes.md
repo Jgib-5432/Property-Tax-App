@@ -4,10 +4,11 @@
 
 Example Entities:
 
-- Tooele City
-- San Juan County
-- Uintah County
-- emery county
+- Tooele City (Truth in Taxation)
+- San Juan County ()
+- Uintah County (Data Missing)
+- emery county (Centrally Assessed)
+- Box Elder (Residential Shift)
 - Washington county flood control, Washington
 
 Color Palette:
@@ -42,25 +43,19 @@ Utah Assosiation of Special Districts: https://www.uasd.org/about-us
 
 - To Do:
 
-  - update tax rate data from certified rate site
-
   - Instructions/ User tutorial?
 
   - Convert homepage into issues of interest? (rate, revenue, value, share, comparisons)
 
-  - set a background for glossary page?
+  - Need others
 
-  - define entity types
+    - Talk to Ben about public ed story
 
-  Need others
+    - How do we tell the story? Why have taxes gone up?
 
-  - Talk to Ben about public ed story
+      - Rates, revenue, values, share
 
-  - How do we tell the story? Why have taxes gone up?
-
-    - Rates, revenue, values, share
-
-  - Vet app with Tax, LRGC, and GOPB before launch
+    - Vet app with Tax, LRGC, and GOPB before launch
 
 ## Additional Development Checklist
 

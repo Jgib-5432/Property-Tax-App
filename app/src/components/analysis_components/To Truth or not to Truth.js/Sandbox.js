@@ -25,6 +25,9 @@ export function Sandbox() {
     setCurrentEntity(selectedOption.value);
   };
 
+  console.log(entityData);
+  console.log(currentData);
+
   return (
     <div className="flex flex-row grow bg-[#eeeeee] text-black m-4 p-4 gap-4 rounded-xl shadow-xl overflow-auto">
       <div className="flex flex-col w-1/7 h-[150vh] gap-2 justify-between items-center">
