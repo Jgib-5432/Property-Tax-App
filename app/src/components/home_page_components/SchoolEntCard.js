@@ -23,8 +23,8 @@ export function SchoolEntCard() {
             School districts are the primary entities responsible for the
             provision of public K-12 eduction in the state. To support these
             efforts, the districts levy property taxes under{" "}
-            <Link href="https://le.utah.gov/xcode/Title53F/Chapter8/53F-8-S201.html?v=C53F-8-S201_2019051420190514">
-              53F-8-201
+            <Link href="https://le.utah.gov/xcode/Title53F/Chapter8/53F-8-P3.html?v=C53F-8-P3_2018012420180124">
+              53F-8-3
             </Link>
             {". "}
             In addition to property taxes, school districts also recived funding

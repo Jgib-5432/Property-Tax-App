@@ -27,7 +27,7 @@ export function CountyEntCard() {
               17-53-220
             </Link>
             &nbsp;of the state code. Counties spend revenue on a variety of
-            fucntions including public works, local law enforcement, elections
+            functions including public works, local law enforcement, elections
             services, health departments, and administrative functions like
             assessing, surveying, recording, etc.
           </p>

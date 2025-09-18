@@ -40,23 +40,17 @@ Utah Assosiation of Special Districts: https://www.uasd.org/about-us
     - 5 year rolling average
     - capped growth
 
-- Feedback edits:
+- To Do:
 
   - update tax rate data from certified rate site
-
-  - define entity types
-
-  - Make sidebar and control panels the same size
-
-  - set axis type explicitly for entity profile page?
-
-  - set a background for glossary page?
-
-  Hard
 
   - Instructions/ User tutorial?
 
   - Convert homepage into issues of interest? (rate, revenue, value, share, comparisons)
+
+  - set a background for glossary page?
+
+  - define entity types
 
   Need others
 
