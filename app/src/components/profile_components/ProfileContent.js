@@ -3,11 +3,10 @@
 import entityData from "../../../public/data/base_data.json" with {type: 'arry'};
 import { ControlPanel } from "@/components/profile_components/ControlPanel";
 import {TaxRateGraph} from "@/components/profile_components/TaxRateGraph"
-import {RevenueGraph} from "@/components/profile_components/RevenueGraph"
 import {ValueGraph} from "@/components/profile_components/ValueGraph"
 import {ShareGraph} from "@/components/profile_components/ShareGraph"
 import ReactMarkdown from "react-markdown";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export function ProfileContent() {
   
@@ -24,10 +23,7 @@ export function ProfileContent() {
     setCurrentTypes(selectedTypes.map(type =>type.value))
   }
 
-  console.log(currentTypes)
-
   const [rateContent, setRateContent] = useState("");
-  const [revenueContent, setRevenueContent] = useState("");
   const [valueContent, setValueContent] = useState("");
   const [shareContent, setShareContent] = useState("");
 
@@ -38,11 +34,6 @@ export function ProfileContent() {
       .then((text) => setRateContent(text));
   }, []);
 
-    useEffect(() => {
-    fetch("/text/entity profiles/Revenue-Chart_des.md")
-      .then((response) => response.text())
-      .then((text) => setRevenueContent(text));
-  }, []);
 
     useEffect(() => {
     fetch("/text/entity profiles/Value-Chart_des.md")
@@ -55,6 +46,16 @@ export function ProfileContent() {
       .then((response) => response.text())
       .then((text) => setShareContent(text));
   }, []);
+
+  const userGuideRef = useRef(null);
+
+    const openDialog = () => {
+    userGuideRef.current.showModal();
+  };
+
+  const closeDialog = () => {
+    userGuideRef.current.close();
+  };
 
   return (
     <div className="flex flex-row grow text-black my-2 mr-2">
@@ -82,7 +83,27 @@ export function ProfileContent() {
         </div>
 
       </div>
+
+      <dialog ref={userGuideRef} open>
+        Test
+        <button onClick={closeDialog} className="border-[1px]">close</button>
+      </dialog>
+
     </div>
   );
 }
 
+/*
+
+import {RevenueGraph} from "@/components/profile_components/RevenueGraph"
+
+
+const [revenueContent, setRevenueContent] = useState("");
+
+    useEffect(() => {
+    fetch("/text/entity profiles/Revenue-Chart_des.md")
+      .then((response) => response.text())
+      .then((text) => setRevenueContent(text));
+  }, []);
+
+*/
