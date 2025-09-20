@@ -7,6 +7,7 @@ import { AnalysisContent } from "@/components/analysis_components/AnalysisConten
 import { StatewideContent } from "@/components/statewide_comparison/StatewideContent";
 import { AnalysisTruthinTaxContent } from "@/components/analysis_components/To Truth or not to Truth.js/AnalysisTruthinTaxContent";
 import { AnalysisResidTiltContent } from "@/components/analysis_components/Residential Tilt/AnalysisResidTiltContent";
+import { AnalysisResidExmptContent } from "@/components/analysis_components/Residential Exemption/AnalysisResidExmptContent";
 
 export function PageTemplate({ page }) {
   const pageMap = new Map();
@@ -17,6 +18,7 @@ export function PageTemplate({ page }) {
   pageMap.set("Statewide Comparison", <StatewideContent />);
   pageMap.set("truth_in_tax", <AnalysisTruthinTaxContent />);
   pageMap.set("reside_tilt", <AnalysisResidTiltContent />);
+  pageMap.set("reside_exempt", <AnalysisResidExmptContent />);
   pageMap.set("Glossary", <GlossaryContent />);
 
   return (

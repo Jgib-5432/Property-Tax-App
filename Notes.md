@@ -51,9 +51,9 @@ Utah Assosiation of Special Districts: https://www.uasd.org/about-us
 
     - Things to Do:
 
-      - set up new analysis page
       - compute default analysis (55%)
-      - set up new sandbox
+      - Revise Sandbox
+        - Set up graphs
       - write up methodology description and results
       - code interactive graphs to answer the questions
       - code analysis componenets to respond to dynamic residential exemption
