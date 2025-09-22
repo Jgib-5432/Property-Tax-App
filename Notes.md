@@ -45,24 +45,13 @@ Utah Assosiation of Special Districts: https://www.uasd.org/about-us
 
   - Instructions/ User tutorial?
 
-  - Work up interative demostration of tax shift in response to changes in the resedential exemption
-
-    - Example: Box Elder County?
+  - Work up interative demostration of tax shift in response to changes in the residential exemption
 
     - Things to Do:
 
-      - compute default analysis (55%)
-      - Revise Sandbox
-        - Set up graphs
-      - write up methodology description and results
-      - code interactive graphs to answer the questions
+      - Add liability graph into the sandbox
       - code analysis componenets to respond to dynamic residential exemption
-
-    - Queststions to answer:
-      - how much of a tax cut would residents get by increasing the residential exemption?
-      - how much tax burden shifts onto commercial property?
-      - how much of a cut would entities need to bear to keep commercial property whole?
-      - how high does the exemption need to go to get back to a base year for example entity?
+      - Send analysis to Jon and Econ Team.
 
   - Convert homepage into issues of interest? (rate, revenue, value, share, comparisons)
 
