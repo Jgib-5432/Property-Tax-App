@@ -16,7 +16,7 @@ import countiesList from "../../../../public/data/counties_list.json";
 import yearsList from "../../../../public/data/years_list.json";
 import entityTypesList from "../../../../public/data/entity_types_list.json";
 import propertyTypes from "../../../../public/data/property_types_list.json";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 
 export function Sandbox() {
   const exemptionValues = [];
@@ -66,12 +66,109 @@ export function Sandbox() {
     (a, b) => b["Primary Residential, Share"] - a["Primary Residential, Share"]
   );
 
-  const currentData = sortedData.filter(
-    (item) =>
-      currentEntTypes.includes(item["Entity Type"]) &&
-      item["Tax Year"] === currentYear &&
-      currentCounties.includes(item["County Name"])
-  );
+  const currentRawData = useMemo(() => {
+    const sorted = entityData.sort(
+      (a, b) =>
+        b["Primary Residential, Share"] - a["Primary Residential, Share"]
+    );
+    return sorted.filter(
+      (item) =>
+        currentEntTypes.includes(item["Entity Type"]) &&
+        item["Tax Year"] === currentYear &&
+        currentCounties.includes(item["County Name"])
+    );
+  }, [currentEntTypes, currentYear, currentCounties]);
+
+  const findPreviousYearData = (entityName, currentYear) => {
+    return entityData.find(
+      (item) =>
+        item["Entity Name"] === entityName &&
+        item["Tax Year"] === currentYear - 1
+    );
+  };
+
+  const currentUseData = useMemo(() => {
+    const counterfactualExemptionPercentage = currentExemptValue;
+    const counterfactualTaxablePercentage =
+      (100 - counterfactualExemptionPercentage) / 100;
+
+    const observedHistoricalExemption = 45;
+
+    return currentRawData.map((item) => {
+      const newItem = { ...item };
+
+      const marketValue = newItem["Market Value"];
+
+      newItem["Counterfactual Primary Residential"] =
+        marketValue * counterfactualTaxablePercentage;
+
+      newItem["Counterfactual Total Taxable Property"] =
+        newItem["Counterfactual Primary Residential"] +
+        newItem["Non-primary Residential"] +
+        newItem["Commercial"] +
+        newItem["Agricultural"] +
+        newItem["Unimproved"] +
+        newItem["Personal Property"] +
+        newItem["Centrally Assessed"];
+
+      newItem["Counterfactual Tax Rate"] =
+        newItem["Revenue, Total"] /
+        newItem["Counterfactual Total Taxable Property"] /
+        10;
+
+      const allPropertyTypes = propertyTypes.map((p) => p.value);
+
+      allPropertyTypes.forEach((type) => {
+        const counterfactualRevenueKey = `Counterfactual Revenue, ${type}`;
+        if (type === "Primary Residential") {
+          newItem[counterfactualRevenueKey] =
+            newItem["Counterfactual Tax Rate"] *
+            newItem["Counterfactual Primary Residential"] *
+            10;
+        } else if (type === "Personal Property") {
+          newItem[counterfactualRevenueKey] =
+            newItem["Counterfactual Tax Rate"] * newItem[type] * 10;
+        } else {
+          newItem[counterfactualRevenueKey] =
+            newItem["Counterfactual Tax Rate"] * newItem[type] * 10;
+        }
+      });
+
+      allPropertyTypes.forEach((type) => {
+        const shareKey = `Counterfactual ${type}, Share`;
+        if (type === "Primary Residential") {
+          newItem[shareKey] =
+            newItem["Counterfactual Primary Residential"] /
+            newItem["Counterfactual Total Taxable Property"];
+        } else {
+          newItem[shareKey] =
+            newItem[type] / newItem["Counterfactual Total Taxable Property"];
+        }
+      });
+
+      const assumedPropertyMarketValue = 500000;
+      const observedTaxRate = newItem["Tax Rate"];
+
+      newItem["Primary Residenital Tax Liability"] =
+        assumedPropertyMarketValue *
+        ((100 - observedHistoricalExemption) / 100) *
+        (observedTaxRate / 100);
+
+      newItem["Other Tax Liability"] =
+        assumedPropertyMarketValue * 1.0 * (observedTaxRate / 100);
+      newItem["Counterfactual Primary Residenital Tax Liability"] =
+        assumedPropertyMarketValue *
+        counterfactualTaxablePercentage *
+        (newItem["Counterfactual Tax Rate"] / 100);
+
+      newItem["Counterfactual Other Tax Liability"] =
+        assumedPropertyMarketValue *
+        1.0 *
+        (newItem["Counterfactual Tax Rate"] / 100);
+
+      return newItem;
+    });
+  }, [currentRawData, currentExemptValue, findPreviousYearData]);
 
   return (
     <div className="flex flex-row w-full grow bg-[#eeeeee] text-black m-4 p-4 gap-4 rounded-xl shadow-xl">
@@ -95,14 +192,14 @@ export function Sandbox() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-2 w-full h-[320vh]">
+      <div className="flex flex-col gap-2 w-full h-[370vh]">
         <div className="flex flex-col grow bg-white text-black p-4 gap-2 rounded-xl shadow-xl overflow-auto">
           <div className="text-center text-2xl">
             {" "}
             Observed vs Counterfactual Taxable Value (B)
           </div>
           <ResponsiveContainer width="100%" height="95%">
-            <BarChart data={currentData} layout="vertical">
+            <BarChart data={currentUseData} layout="vertical">
               <CartesianGrid stroke="#eeeeee" />
               <XAxis type="number" />
               <YAxis
@@ -195,7 +292,7 @@ export function Sandbox() {
             Observed vs Counterfactual Tax Rates (%)
           </div>
           <ResponsiveContainer width="100%" height="95%">
-            <BarChart data={currentData} layout="vertical">
+            <BarChart data={currentUseData} layout="vertical">
               <CartesianGrid stroke="#eeeeee" />
               <XAxis type="number" />
               <YAxis
@@ -218,7 +315,7 @@ export function Sandbox() {
             Observed vs Counterfactual Revenue (M)
           </div>
           <ResponsiveContainer width="100%" height="95%">
-            <BarChart data={currentData} layout="vertical">
+            <BarChart data={currentUseData} layout="vertical">
               <CartesianGrid stroke="#eeeeee" />
               <XAxis type="number" />
               <YAxis
@@ -343,7 +440,7 @@ export function Sandbox() {
             Observed vs Counterfactual Share (%)
           </div>
           <ResponsiveContainer width="100%" height="95%">
-            <BarChart data={currentData} layout="vertical">
+            <BarChart data={currentUseData} layout="vertical">
               <CartesianGrid stroke="#eeeeee" />
               <XAxis
                 type="number"
@@ -462,9 +559,45 @@ export function Sandbox() {
             </BarChart>
           </ResponsiveContainer>{" "}
         </div>
+
+        <div className="flex flex-col grow bg-white text-black p-4 gap-2 rounded-xl shadow-xl overflow-auto">
+          <div className="text-center text-2xl">
+            {" "}
+            Observed vs Counterfactual Tax Liability ($)
+          </div>
+          <ResponsiveContainer width="100%" height="95%">
+            <BarChart data={currentUseData} layout="vertical">
+              <CartesianGrid stroke="#eeeeee" />
+              <XAxis type="number" />
+              <YAxis
+                dataKey="Entity Name"
+                type="category"
+                tick={{ fontSize: 12 }}
+                interval={0}
+              />
+              <Tooltip formatter={(number) => `$${number.toFixed(0)}`} />
+              <Bar
+                dataKey="Primary Residenital Tax Liability"
+                fill="#196b24"
+                stackId="a"
+              />
+              <Bar
+                dataKey="Counterfactual Primary Residenital Tax Liability"
+                fill="#196b2470"
+                stackId="b"
+              />
+              <Bar dataKey="Other Tax Liability" fill="#8b4aa8" stackId="c" />
+              <Bar
+                dataKey="Counterfactual Other Tax Liability"
+                fill="#8b4aa880"
+                stackId="d"
+              />
+            </BarChart>
+          </ResponsiveContainer>{" "}
+        </div>
       </div>
 
-      <div className="flex flex-col w-1/6 h-[320vh] gap-2 items-center">
+      <div className="flex flex-col w-1/6 h-[370vh] gap-2 items-center">
         <div className="flex w-full h-1/4 overflow-visible">
           <div className="flex flex-col w-full h-6/10 bg-white p-4 rounded-xl shadow-xl justify-center sticky top-16">
             <p className="p-2 indent-4 text-center overflow-auto">
@@ -515,6 +648,19 @@ export function Sandbox() {
               residential property, it would increase the share of the tax base
               borne by all other types of taxable property. The counterfactual
               is shown here is the lighter bars.
+            </p>
+          </div>
+        </div>
+        <div className="flex w-full h-1/4 overflow-visible">
+          <div className="flex flex-col w-full h-6/10 bg-white p-4 rounded-xl shadow-xl justify-center sticky top-16">
+            <p className="p-2 indent-4 text-center overflow-auto">
+              This chart shows the difference in liability on a $500,000
+              property between the existing residential exemption of 45% and the
+              counterfactual exemption. Value are calcuated to account for the
+              change in the taxable value as well as the tax rate and are
+              displayed by taxing entity. Green bars show change for primary
+              residential property while purple bars show all other property
+              types.
             </p>
           </div>
         </div>

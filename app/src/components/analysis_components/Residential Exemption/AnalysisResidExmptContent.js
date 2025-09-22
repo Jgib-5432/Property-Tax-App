@@ -42,7 +42,7 @@ export function AnalysisResidExmptContent() {
         <p>
           If one wished to reduce the tax burden on homeowners, increasing the
           primary residential exemption is among the options available. However,
-          this change would not just affect homeowners, but instead would flow
+          this change would not just affect homeowners but instead would flow
           through the system and change the liability for all types of taxable
           property. This is because the residential exemption directly changes
           the tax base. And since Truth in Taxation balances entity revenue in
@@ -123,8 +123,8 @@ export function AnalysisResidExmptContent() {
         </div>
         <p>
           On net, the change in the tax rate needed to maintain revenues taken
-          with the the smaller total value of residential property rebalances
-          the total liability away from residential property and onto all other
+          with the smaller total value of residential property rebalances the
+          total liability away from residential property and onto all other
           types of taxable property. As a result, homeowners would receive a tax
           break whose size depends on the underlying mix of property in the tax
           base, the value of their property, and the specific entities which

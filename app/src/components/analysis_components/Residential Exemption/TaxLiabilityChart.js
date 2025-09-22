@@ -11,7 +11,7 @@ import {
 import entityData from "../../../../public/data/exemption_data.json";
 
 export function TaxLiabilityChart() {
-  const selectedCounties = ["Morgan", "Carbon", "Grand", "Statewide"];
+  const selectedCounties = ["Morgan", "Carbon", "Grand"];
 
   const currentData = entityData.filter(
     (item) =>
@@ -23,7 +23,7 @@ export function TaxLiabilityChart() {
     <div className="flex flex-col h-96 w-5/10 bg-white text-black p-4 gap-2 rounded-xl shadow-xl justify-self-center">
       <div className="text-center text-xl">
         {" "}
-        Observed vs Counterfactual Tax Liability: Morgan, Carbon, & Grand
+        Observed vs Counterfactual Tax Liability ($): Morgan, Carbon, & Grand
         Counties
       </div>
       <ResponsiveContainer width="100%" height="95%">
@@ -36,7 +36,7 @@ export function TaxLiabilityChart() {
             tick={{ fontSize: 12 }}
             interval={0}
           />
-          <Tooltip formatter={(number) => `$${number.toFixed(0)}`} />(
+          <Tooltip formatter={(number) => `$${number.toFixed(0)}`} />
           <Bar
             dataKey="Primary Residenital Tax Liability"
             fill="#196b24"

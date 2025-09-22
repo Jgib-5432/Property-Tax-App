@@ -45,14 +45,6 @@ Utah Assosiation of Special Districts: https://www.uasd.org/about-us
 
   - Instructions/ User tutorial?
 
-  - Work up interative demostration of tax shift in response to changes in the residential exemption
-
-    - Things to Do:
-
-      - Add liability graph into the sandbox
-      - code analysis componenets to respond to dynamic residential exemption
-      - Send analysis to Jon and Econ Team.
-
   - Convert homepage into issues of interest? (rate, revenue, value, share, comparisons)
 
   - Need others
