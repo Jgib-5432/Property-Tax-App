@@ -574,6 +574,7 @@ export function Sandbox() {
                 type="category"
                 tick={{ fontSize: 12 }}
                 interval={0}
+                width={170}
               />
               <Tooltip formatter={(number) => `$${number.toFixed(0)}`} />
               <Bar
