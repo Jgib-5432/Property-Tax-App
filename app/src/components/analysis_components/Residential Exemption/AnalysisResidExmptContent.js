@@ -63,7 +63,7 @@ export function AnalysisResidExmptContent() {
           The first step in estimating the impact of changing the residential
           exemption from 45% to 55% is understanding how such a change would
           flow through the system. The first thing a change in the exemption
-          would affect the taxable value of primary residential property. In
+          would affect is the taxable value of primary residential property. In
           effect, raising the exemption would remove a chunk of property from
           the tax base. The chart below shows this effect for Morgan, Carbon,
           and Grand counties.

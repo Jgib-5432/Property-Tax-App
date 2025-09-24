@@ -32,11 +32,14 @@ React Selector https://react-select.com/home
 
 Utah Assosiation of Special Districts: https://www.uasd.org/about-us
 
-## Minimum Viable Product Checklist
+## Current Development Checklist
 
-- General:
+- Docker
+
+- Analysis:
 
   - Resdiential Tilt: Why taxes are going up on homeowners
+  - How has tax revenue grown in real terms? (adjust for population and inflation)
   - Inflation Adjustment: needed revision or tax hikes in disguise?
     - 5 year rolling average
     - capped growth
@@ -45,16 +48,25 @@ Utah Assosiation of Special Districts: https://www.uasd.org/about-us
 
   - Instructions/ User tutorial?
 
-  - Convert homepage into issues of interest? (rate, revenue, value, share, comparisons)
+  - Convert homepage into story blocks
 
-  - Need others
+  - structure edits
 
-    - Talk to Ben about public ed story
+    - convert graph descriptions in to tooltext (pop-up on hover)
+    - entity profile covert to 4-up graphs (spotlight one on click? With the other three along the bottom?)
+    - add individual liability graph into entity profile page
 
-    - How do we tell the story? Why have taxes gone up?
+  - Text edits
 
-      - Rates, revenue, values, share
+    - Put $ in chart titles
+    - label axis in double axis graphs
+    - capitilze entity names
+    - Change 'Counterfactual' to 'Simulation'
+    - add hover effect to buttons?
 
+  - Draft Deployment
+
+    - Talk to Conn for putting Vesta on Legislative servers
     - Vet app with Tax, LRGC, and GOPB before launch
 
 ## Additional Development Checklist
@@ -72,9 +84,7 @@ Utah Assosiation of Special Districts: https://www.uasd.org/about-us
   - click on taxing entity brings up profile
   - button on profile to bring up map
 
-- Add entity Summary information to map page
-
-- Link sidebar titles in home page to content
+- Link sidebar titles in glossary page to content
 
   - entity selector: group entities by entity type
   - 'select all' option for various selectors?
@@ -95,7 +105,8 @@ Utah Assosiation of Special Districts: https://www.uasd.org/about-us
 
   - 'Sort by' Selector
 
-- Some estimates of tax liaiblity/ burden by tax area
+- Add the ability to take an address and display total tax rates and revenue from each tax entity relevant to that address
+  - Talk to ARCGIS and/ or Lacey
 
 ## Cuts
 
