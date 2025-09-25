@@ -36,10 +36,10 @@ export function StatewideContent() {
         <div className="flex flex-row grow text-black my-2 mr-2">
           <ControlPanel onChangeEntType={changeEntType} onChangeCounty={changeCounties} onChangeYear={changeYear}/>
          <div className="flex flex-col grow text-2xl gap-4 p-4 bg-[#eeeeee] text-black rounded-xl shadow-xl/20 items-center ">
-            <div className="flex flex-row  h-180 w-full gap-2">
+            <div className="flex flex-row  h-200 w-full gap-2">
           <ShareCompGraph  currentData={currentData} currentYear={currentYear}/>
             </div>
-          <div className="flex flex-row  h-180 w-full gap-2">
+          <div className="flex flex-row  h-200 w-full gap-2">
           <ValueCompGraph  currentData={currentData} currentYear={currentYear}/>
             </div>
           </div>

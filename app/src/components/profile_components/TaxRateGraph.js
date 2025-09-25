@@ -12,7 +12,7 @@ import {
 export function TaxRateGraph({ currentEntity, currentData }) {
   return (
     <div className="flex flex-col h-full w-full p-2 gap-2 bg-white place-self-end justify-center items-center rounded-xl shadow-xl">
-      <div>Tax Rate & Revenue (M): {currentEntity} </div>
+      <div>Tax Rate & Revenue ($M): {currentEntity} </div>
       <ResponsiveContainer width="98%" height="95%">
         <LineChart data={currentData}>
           <CartesianGrid stroke="#eeeeee" />
@@ -47,6 +47,13 @@ export function TaxRateGraph({ currentEntity, currentData }) {
             domain={[0, (dataMax) => dataMax * 1.3]}
             tick={{ fontSize: 18 }}
             tickFormatter={(number) => `${number.toFixed(2)}%`}
+            label={{
+              value: "Rate",
+              offset: -45,
+              angle: -45,
+              position: "top",
+            }}
+            width={80}
           />
           <YAxis
             dataKey="Revenue, Total"
@@ -61,6 +68,13 @@ export function TaxRateGraph({ currentEntity, currentData }) {
                 maximumFractionDigits: 2,
               }).format(value)
             }
+            label={{
+              value: "Revenue",
+              offset: -45,
+              angle: 45,
+              position: "top",
+            }}
+            width={80}
           />
           <Tooltip
             yAxisId="right"

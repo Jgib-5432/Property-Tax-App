@@ -196,7 +196,7 @@ export function Sandbox() {
         <div className="flex flex-col grow bg-white text-black p-4 gap-2 rounded-xl shadow-xl overflow-auto">
           <div className="text-center text-2xl">
             {" "}
-            Observed vs Counterfactual Taxable Value (B)
+            Observed vs Counterfactual Taxable Value ($B)
           </div>
           <ResponsiveContainer width="100%" height="95%">
             <BarChart data={currentUseData} layout="vertical">
@@ -312,7 +312,7 @@ export function Sandbox() {
         <div className="flex flex-col grow bg-white text-black p-4 gap-2 rounded-xl shadow-xl overflow-auto">
           <div className="text-center text-2xl">
             {" "}
-            Observed vs Counterfactual Revenue (M)
+            Observed vs Counterfactual Revenue ($M)
           </div>
           <ResponsiveContainer width="100%" height="95%">
             <BarChart data={currentUseData} layout="vertical">

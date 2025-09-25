@@ -12,7 +12,10 @@ export function Sidebar() {
   return (
     <div className="flex flex-col items-center h-[99vh] max-w-56 bg-[#bcb4a5] text-[#196b24] grow my-2 text-xl text-center rounded-r-xl sticky top-1 ">
       <div className=" flex flex-col items-center sticky top-0 ">
-        <button className="text-4xl px-4 mt-4" onClick={toggleCollapse}>
+        <button
+          className="flex text-4xl px-4 mt-4 place-self-center rounded-xl hover:bg-[#c9c3b7]"
+          onClick={toggleCollapse}
+        >
           {"\u2261"}
         </button>
         {isTitleOpen && (

@@ -12,7 +12,7 @@ import {
 export function ValueCompGraph({ currentData, currentYear }) {
   return (
     <div className="flex flex-col h-full w-full p-2 gap-2 bg-white place-self-end justify-center items-center rounded-xl shadow-xl">
-      <div>Total Tax Base by Property Type (B), {currentYear} </div>
+      <div>Total Tax Base by Property Type ($B), {currentYear} </div>
       <ResponsiveContainer width="100%" height="95%">
         <BarChart data={currentData} layout="vertical">
           <CartesianGrid stroke="#eeeeee" />
@@ -25,7 +25,7 @@ export function ValueCompGraph({ currentData, currentYear }) {
             type="category"
             tick={{ fontSize: 12 }}
             interval={0}
-            width={160}
+            width={180}
           />
           <Tooltip formatter={(number) => `$${number.toFixed(2)} B`} />
           <Legend />

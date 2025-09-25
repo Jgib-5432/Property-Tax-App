@@ -12,7 +12,7 @@ import {
 export function ValueGraph({ currentEntity, currentData, currentTypes }) {
   return (
     <div className="flex flex-col h-full w-full p-2 gap-2 bg-white place-self-end justify-center items-center rounded-xl shadow-xl">
-      <div>Taxable Value (B): {currentEntity} </div>
+      <div>Taxable Value ($B): {currentEntity} </div>
       <ResponsiveContainer width="95%" height="95%">
         <LineChart data={currentData}>
           <CartesianGrid stroke="#eeeeee" />(
@@ -103,6 +103,12 @@ export function ValueGraph({ currentEntity, currentData, currentTypes }) {
             domain={[0, (dataMax) => dataMax * 1.3]}
             tick={{ fontSize: 18 }}
             tickFormatter={(number) => `$${number.toFixed(1)}`}
+            label={{
+              value: "Value",
+              offset: -45,
+              angle: -45,
+              position: "top",
+            }}
           />
           <Tooltip formatter={(number) => `$${number.toFixed(2)} B`} />
           <Legend align="center" verticalAlign="bottom" />

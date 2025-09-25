@@ -23,7 +23,7 @@ export function TotalTaxRevenueChart() {
     <div className="flex flex-col h-96 w-5/10 bg-white text-black p-4 gap-2 rounded-xl shadow-xl justify-self-center">
       <div className="text-center text-xl">
         {" "}
-        Observed vs Counterfactual Tax Revenue (M): Morgan, Carbon, & Grand
+        Observed vs Counterfactual Tax Revenue ($M): Morgan, Carbon, & Grand
         Counties
       </div>
       <ResponsiveContainer width="100%" height="95%">

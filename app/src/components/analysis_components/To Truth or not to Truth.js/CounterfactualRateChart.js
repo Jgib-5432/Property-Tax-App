@@ -53,6 +53,12 @@ export function CounterfactualRateChart() {
             domain={[0, (dataMax) => dataMax * 1.3]}
             tick={{ fontSize: 14 }}
             tickFormatter={(number) => `${number.toFixed(2)}%`}
+            label={{
+              value: "Rate",
+              offset: -25,
+              angle: 0,
+              position: "top",
+            }}
           />
           <Tooltip formatter={(number) => `${number.toFixed(2)}`} />
           <Legend align="center" verticalAlign="bottom" />

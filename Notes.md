@@ -34,8 +34,6 @@ Utah Assosiation of Special Districts: https://www.uasd.org/about-us
 
 ## Current Development Checklist
 
-- Docker
-
 - Analysis:
 
   - Resdiential Tilt: Why taxes are going up on homeowners
@@ -52,21 +50,17 @@ Utah Assosiation of Special Districts: https://www.uasd.org/about-us
 
   - structure edits
 
-    - convert graph descriptions in to tooltext (pop-up on hover)
+    - convert graph descriptions into tooltext (pop-up on hover)
     - entity profile covert to 4-up graphs (spotlight one on click? With the other three along the bottom?)
     - add individual liability graph into entity profile page
 
   - Text edits
 
-    - Put $ in chart titles
-    - label axis in double axis graphs
-    - capitilze entity names
     - Change 'Counterfactual' to 'Simulation'
-    - add hover effect to buttons?
 
   - Draft Deployment
 
-    - Talk to Conn for putting Vesta on Legislative servers
+    - Dockerize Vesta
     - Vet app with Tax, LRGC, and GOPB before launch
 
 ## Additional Development Checklist

@@ -12,7 +12,7 @@ import {
 export function ShareCompGraph({ currentData, currentYear }) {
   return (
     <div className="flex flex-col h-full w-full p-2 gap-2 bg-white place-self-end justify-center items-center rounded-xl shadow-xl">
-      <div>Share of Tax Base by Property Type, {currentYear} </div>
+      <div>Share of Tax Base by Property Type (%), {currentYear} </div>
       <ResponsiveContainer width="98%" height="95%">
         <BarChart data={currentData} layout="vertical">
           <CartesianGrid stroke="#eeeeee" />
@@ -27,7 +27,7 @@ export function ShareCompGraph({ currentData, currentYear }) {
             type="category"
             tick={{ fontSize: 12 }}
             interval={0}
-            width={170}
+            width={180}
           />
           <Tooltip formatter={(number) => `${number.toFixed(2) * 100}%`} />
           <Legend />

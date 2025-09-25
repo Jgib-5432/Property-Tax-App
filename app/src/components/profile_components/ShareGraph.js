@@ -12,7 +12,7 @@ import {
 export function ShareGraph({ currentEntity, currentData, currentTypes }) {
   return (
     <div className="flex flex-col h-full w-full p-2 gap-2 bg-white place-self-end justify-center items-center rounded-xl shadow-xl">
-      <div>Share of Taxable Value: {currentEntity} </div>
+      <div>Share of Taxable Value (%): {currentEntity} </div>
       <ResponsiveContainer width="95%" height="95%">
         <AreaChart data={currentData}>
           <CartesianGrid stroke="#eeeeee" />
@@ -111,6 +111,12 @@ export function ShareGraph({ currentEntity, currentData, currentTypes }) {
             domain={[0, 1]}
             tick={{ fontSize: 18 }}
             tickFormatter={(number) => `${number.toFixed(2) * 100}%`}
+            label={{
+              value: "Share",
+              offset: -45,
+              angle: -45,
+              position: "top",
+            }}
           />
           <Tooltip formatter={(number) => `${number.toFixed(2) * 100}%`} />
           <Legend align="center" verticalAlign="bottom" />

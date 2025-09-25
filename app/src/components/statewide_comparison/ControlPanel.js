@@ -21,7 +21,7 @@ export function ControlPanel({
     <div className="flex flex-col h-[99vh] bg-[#bcb4a5] rounded-r-xl mr-2 text-[#196b24] sticky top-1">
       <div className="flex flex-col h-full sticky top-0 ">
         <button
-          className="flex text-4xl px-4 mt-4 place-self-center"
+          className="flex text-4xl px-4 mt-4 place-self-center rounded-xl hover:bg-[#c9c3b7]"
           onClick={toggleCollapse}
         >
           {"\u2261"}

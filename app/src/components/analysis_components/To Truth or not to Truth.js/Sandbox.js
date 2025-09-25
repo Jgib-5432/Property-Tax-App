@@ -62,7 +62,7 @@ export function Sandbox() {
         <div className="flex flex-col grow bg-white text-black p-4 gap-2 rounded-xl shadow-xl overflow-auto">
           <div className="text-center text-2xl">
             {" "}
-            Base vs Counterfactual Tax Rate: {currentEntity}
+            Base vs Counterfactual Tax Rate (%): {currentEntity}
           </div>
           <ResponsiveContainer width="100%" height="95%">
             <LineChart data={currentData}>
@@ -101,6 +101,12 @@ export function Sandbox() {
                 domain={[0, (dataMax) => dataMax * 1.3]}
                 tick={{ fontSize: 18 }}
                 tickFormatter={(number) => `${number.toFixed(2)}%`}
+                label={{
+                  value: "Rate",
+                  offset: -25,
+                  angle: -45,
+                  position: "top",
+                }}
               />
               <Tooltip formatter={(number) => `${number.toFixed(3)}%`} />
               <Legend align="center" verticalAlign="bottom" />
@@ -111,7 +117,7 @@ export function Sandbox() {
         <div className="flex flex-col grow bg-white text-black p-4 gap-2 rounded-xl shadow-xl overflow-auto">
           <div className="text-center text-2xl">
             {" "}
-            Base vs Counterfactual Revenue (M): {currentEntity}
+            Base vs Counterfactual Revenue ($M): {currentEntity}
           </div>
           <ResponsiveContainer width="100%" height="95%">
             <LineChart data={currentData}>
@@ -154,6 +160,12 @@ export function Sandbox() {
                     maximumFractionDigits: 2,
                   }).format(value)
                 }
+                label={{
+                  value: "Revenue",
+                  offset: -25,
+                  angle: -45,
+                  position: "top",
+                }}
               />
               <Tooltip
                 formatter={(value) =>

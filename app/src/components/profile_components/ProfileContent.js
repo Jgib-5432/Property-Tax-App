@@ -84,14 +84,21 @@ export function ProfileContent() {
 
       </div>
 
-      <dialog ref={userGuideRef} open>
-        Test
-        <button onClick={closeDialog} className="border-[1px]">close</button>
-      </dialog>
+
 
     </div>
   );
 }
+
+/*
+      <dialog ref={userGuideRef} open>
+        Test
+        <button onClick={closeDialog} className="border-[1px]">close</button>
+      </dialog>
+      */
+
+
+
 
 /*
 

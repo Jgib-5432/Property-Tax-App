@@ -20,7 +20,7 @@ export function TooeleCityRateChart() {
     <div className="flex flex-col h-96 w-5/10 bg-white text-black p-4 gap-2 rounded-xl shadow-xl">
       <div className="text-center text-xl">
         {" "}
-        Tax Rate & Total Taxable Property (B): Tooele City
+        Tax Rate & Total Taxable Property ($B): Tooele City
       </div>
       <ResponsiveContainer width="100%" height="95%">
         <LineChart data={currentData}>
@@ -56,6 +56,12 @@ export function TooeleCityRateChart() {
             domain={[0, (dataMax) => dataMax * 1.3]}
             tick={{ fontSize: 14 }}
             tickFormatter={(number) => `${number.toFixed(2)}%`}
+            label={{
+              value: "Rate",
+              offset: -25,
+              angle: 0,
+              position: "top",
+            }}
           />
           <YAxis
             dataKey="Baseline Property"
@@ -64,6 +70,12 @@ export function TooeleCityRateChart() {
             interval="preserveStart"
             tick={{ fontSize: 14 }}
             tickFormatter={(number) => `$${number.toFixed(1)}`}
+            label={{
+              value: "Base",
+              offset: -25,
+              angle: 0,
+              position: "top",
+            }}
           />
           <Tooltip
             yAxisId="right"
