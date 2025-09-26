@@ -196,7 +196,7 @@ export function Sandbox() {
         <div className="flex flex-col grow bg-white text-black p-4 gap-2 rounded-xl shadow-xl overflow-auto">
           <div className="text-center text-2xl">
             {" "}
-            Observed vs Counterfactual Taxable Value ($B)
+            Observed vs Simulated Taxable Value ($B)
           </div>
           <ResponsiveContainer width="100%" height="95%">
             <BarChart data={currentUseData} layout="vertical">
@@ -289,7 +289,7 @@ export function Sandbox() {
         <div className="flex flex-col grow bg-white text-black p-4 gap-2 rounded-xl shadow-xl overflow-auto">
           <div className="text-center text-2xl">
             {" "}
-            Observed vs Counterfactual Tax Rates (%)
+            Observed vs Simulated Tax Rates (%)
           </div>
           <ResponsiveContainer width="100%" height="95%">
             <BarChart data={currentUseData} layout="vertical">
@@ -312,7 +312,7 @@ export function Sandbox() {
         <div className="flex flex-col grow bg-white text-black p-4 gap-2 rounded-xl shadow-xl overflow-auto">
           <div className="text-center text-2xl">
             {" "}
-            Observed vs Counterfactual Revenue ($M)
+            Observed vs Simulated Revenue ($M)
           </div>
           <ResponsiveContainer width="100%" height="95%">
             <BarChart data={currentUseData} layout="vertical">
@@ -437,7 +437,7 @@ export function Sandbox() {
         <div className="flex flex-col grow bg-white text-black p-4 gap-2 rounded-xl shadow-xl overflow-auto">
           <div className="text-center text-2xl">
             {" "}
-            Observed vs Counterfactual Share (%)
+            Observed vs Simulated Share (%)
           </div>
           <ResponsiveContainer width="100%" height="95%">
             <BarChart data={currentUseData} layout="vertical">
@@ -563,7 +563,7 @@ export function Sandbox() {
         <div className="flex flex-col grow bg-white text-black p-4 gap-2 rounded-xl shadow-xl overflow-auto">
           <div className="text-center text-2xl">
             {" "}
-            Observed vs Counterfactual Tax Liability ($)
+            Observed vs Simulated Tax Liability ($)
           </div>
           <ResponsiveContainer width="100%" height="95%">
             <BarChart data={currentUseData} layout="vertical">
@@ -605,9 +605,9 @@ export function Sandbox() {
               This chart show how total taxable value would change by entity if
               the residential exemption were set at another value. Increasing
               the exemption has the effect of shrinking the aggregate value of
-              primary residential property and so the counterfactual tax base
-              (shown here in the lighter bars), will be strictly smaller than
-              the observed tax base.
+              primary residential property and so the simulated tax base (shown
+              here in the lighter bars), will be strictly smaller than the
+              observed tax base.
             </p>
           </div>
         </div>
@@ -620,8 +620,8 @@ export function Sandbox() {
               enforces flat revenues and an increase in the residential
               exemption would shrink the tax base, applied tax rates would
               increase to maintain revenues, all else equal. As such, the
-              counterfactual tax rates shown in the lighter bars are strictly
-              higher than the observed values.
+              simulated tax rates shown in the lighter bars are strictly higher
+              than the observed values.
             </p>
           </div>
         </div>
@@ -647,8 +647,8 @@ export function Sandbox() {
               would shift if the residential exemption were altered. Since
               increasing the exemption reduces the total value of primary
               residential property, it would increase the share of the tax base
-              borne by all other types of taxable property. The counterfactual
-              is shown here is the lighter bars.
+              borne by all other types of taxable property. The Simulation is
+              shown here is the lighter bars.
             </p>
           </div>
         </div>
@@ -657,11 +657,10 @@ export function Sandbox() {
             <p className="p-2 indent-4 text-center overflow-auto">
               This chart shows the difference in liability on a $500,000
               property between the existing residential exemption of 45% and the
-              counterfactual exemption. Value are calcuated to account for the
-              change in the taxable value as well as the tax rate and are
-              displayed by taxing entity. Green bars show change for primary
-              residential property while purple bars show all other property
-              types.
+              simulated exemption. Value are calcuated to account for the change
+              in the taxable value as well as the tax rate and are displayed by
+              taxing entity. Green bars show change for primary residential
+              property while purple bars show all other property types.
             </p>
           </div>
         </div>

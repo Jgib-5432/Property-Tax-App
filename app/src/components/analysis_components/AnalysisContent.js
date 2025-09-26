@@ -12,9 +12,23 @@ export function AnalysisContent() {
           "To what extent has Truth in Taxation contrained property tax growth?"
         }
         findings={
-          "Between 2014 and 2024, but for Truth in Taxation statewide property tax liability would be roughly $2.5 billion higher."
+          "Between 2014 and 2024, but for Truth in Taxation statewide property tax liability would be roughly $2.3 billion higher."
         }
         pubDate={"9/3/2025"}
+        analyst={"Jared Gibbs"}
+      />
+      <AnalysisTemplateCard
+        title={
+          "Residential Exemption: How does the residential exemption impact taxes?"
+        }
+        link={"/pages/analysis/reside_exempt"}
+        question={
+          "How does moving the exemption from residential exemption from 45% to 55% affect taxpayers?"
+        }
+        findings={
+          "Statewide, increasing to 55% would reduce residential tax liability by $236 and increase non-residential liability by $506 per year on a $500,000 property."
+        }
+        pubDate={"10/2/2025"}
         analyst={"Jared Gibbs"}
       />
       <AnalysisTemplateCard

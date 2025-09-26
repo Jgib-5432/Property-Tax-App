@@ -8,7 +8,7 @@ export function HomeContent() {
         {"\u26B6"}&nbsp; Vesta &nbsp;{"\u26B6"}
       </div>
       <div className="relative z-10 flex justify-center text-[36px] italic">
-        The window in Utah's property tax system.
+        The window into Utah's property tax system
       </div>
     </div>
   );

@@ -83,48 +83,48 @@ export function AnalysisTruthinTaxContent() {
           turn to estimating how effective Truth in Taxation has been at
           constraining property taxes. In order to do that, we need to determine
           what tax rates would have been if it were not in place to drive them
-          down. Constructing this counterfactual scenario is conceptually
-          simple. By carrying forward the existing tax rate (and adjusting it up
-          when an increase occurs), we can model what rates would have been in
-          the absence of Truth and Taxation. After all, if we assume that taxing
-          entities would not have lowered their rates voluntarily, then the only
-          mechanism to decrease them is Truth in Taxation. Computing that
-          counterfactual yields the scenario shown in the charts below.
+          down. Constructing this simulation is conceptually simple. By carrying
+          forward the existing tax rate (and adjusting it up when an increase
+          occurs), we can model what rates would have been in the absence of
+          Truth and Taxation. After all, if we assume that taxing entities would
+          not have lowered their rates voluntarily, then the only mechanism to
+          decrease them is Truth in Taxation. Computing that simulation yields
+          the scenario shown in the charts below.
         </p>
         <div className="flex flex-row gap-4">
           <CounterfactualRateChart />
           <CounterfactualRevenueChart />
         </div>
         <p>
-          In the left chart, the purple line shows the counterfactual rate of
-          .25% from 2014 until the city raised taxes to .33% in 2018, whereafter
-          the rate remains at the higher value for the remainder of the
-          timeframe. By contrast, under Truth in Taxation, the rates got as low
-          as .19% in 2018 and .24% in 2023. The difference between the rates
-          themselves is one way to measure the effectiveness of Truth in
-          Taxation. For Tooele City in particular, the tax rate in 2024 is about
-          two-thirds as high as it would have been without Truth in Taxation.
-          However, a better measure of effectiveness would be directly comparing
-          the difference in aggregate tax liability experienced by taxpayers.
-          For that, we can look to the chart on the right. It depicts the base
-          revenue collected by the city shown by the green line compared to what
-          the city would have collected if the rate had not been lowered in
-          purple. Note that this assumes the growth trends in the underlying tax
-          base are independent of the rate.
+          In the left chart, the purple line shows the simulated rate of .25%
+          from 2014 until the city raised taxes to .33% in 2018, whereafter the
+          rate remains at the higher value for the remainder of the timeframe.
+          By contrast, under Truth in Taxation, the rates got as low as .19% in
+          2018 and .24% in 2023. The difference between the rates themselves is
+          one way to measure the effectiveness of Truth in Taxation. For Tooele
+          City in particular, the tax rate in 2024 is about two-thirds as high
+          as it would have been without Truth in Taxation. However, a better
+          measure of effectiveness would be directly comparing the difference in
+          aggregate tax liability experienced by taxpayers. For that, we can
+          look to the chart on the right. It depicts the base revenue collected
+          by the city shown by the green line compared to what the city would
+          have collected if the rate had not been lowered in purple. Note that
+          this assumes the growth trends in the underlying tax base are
+          independent of the rate.
         </p>
         <p>
-          The difference between the base revenue and the counterfactual revenue
-          is shown by the black line. Since this difference is the benefit
-          derived from Truth in Taxation, we can call this value for any given
-          year the &apos;Truth Dividend&apos;. In essence, it measures how much
-          savings are accrued to taxpayers over time due to the ratcheting down
-          of tax rates. It would be equally accurate to describe this value as
-          the revenue forgone to the taxing entity due to Truth in Taxation. In
-          the case of Tooele City, residents are estimated to have paid $3.3
-          million less in 2024 property taxes than they would have otherwise
-          relative to the 2014 baseline. In other words, Tooele City taxpayers
-          received a Truth Dividend in the amount of $3.3 million in 2024
-          (relative to the 2014 baseline).
+          The difference between the base revenue and the simulation revenue is
+          shown by the black line. Since this difference is the benefit derived
+          from Truth in Taxation, we can call this value for any given year the
+          &apos;Truth Dividend&apos;. In essence, it measures how much savings
+          are accrued to taxpayers over time due to the ratcheting down of tax
+          rates. It would be equally accurate to describe this value as the
+          revenue forgone to the taxing entity due to Truth in Taxation. In the
+          case of Tooele City, residents are estimated to have paid $3.3 million
+          less in 2024 property taxes than they would have otherwise relative to
+          the 2014 baseline. In other words, Tooele City taxpayers received a
+          Truth Dividend in the amount of $3.3 million in 2024 (relative to the
+          2014 baseline).
         </p>
         <p>
           Naturally, fortunes vary by which taxing entity happens to be at

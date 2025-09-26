@@ -31,12 +31,11 @@ export function Sandbox() {
         <div className="flex flex-col w-full  bg-white p-4 gap-2 rounded-xl shadow-xl justify-center">
           <p className="p-2 indent-4 text-center overflow-auto">
             This chart shows the observed tax rate in green relative to the
-            counterfactual rate shown in purple. The black line is the
-            difference between the two. The counterfactual rate shows what the
-            tax rate would have been each year if Truth in Taxation had not been
-            in place to contrain the growth of aggregate tax liability. The
-            chart assumes that tax entities would not have voluntarily lowered
-            their rates.
+            simulated rate shown in purple. The black line is the difference
+            between the two. The simulated rate shows what the tax rate would
+            have been each year if Truth in Taxation had not been in place to
+            contrain the growth of aggregate tax liability. The chart assumes
+            that tax entities would not have voluntarily lowered their rates.
           </p>
         </div>
 
@@ -48,12 +47,12 @@ export function Sandbox() {
         <div className="flex flex-col w-full bg-white p-4 gap-2 rounded-xl shadow-xl justify-center">
           <p className="p-2 indent-4 text-center overflow-auto">
             This chart shows the observed tax revenue in green relative to the
-            counterfactual revenue shown in purple. The black line is the
-            difference between the two. The counterfactual revenue shows what
-            the total collections would have been each year if Truth in Taxation
-            had not been in place to contrain the growth of aggregate tax
-            liability. The chart assumes that tax entities would not have
-            voluntarily lowered their revenue.
+            simulated revenue shown in purple. The black line is the difference
+            between the two. The simulated revenue shows what the total
+            collections would have been each year if Truth in Taxation had not
+            been in place to contrain the growth of aggregate tax liability. The
+            chart assumes that tax entities would not have voluntarily lowered
+            their revenue.
           </p>
         </div>
       </div>
@@ -62,7 +61,7 @@ export function Sandbox() {
         <div className="flex flex-col grow bg-white text-black p-4 gap-2 rounded-xl shadow-xl overflow-auto">
           <div className="text-center text-2xl">
             {" "}
-            Base vs Counterfactual Tax Rate (%): {currentEntity}
+            Base vs Simulated Tax Rate (%): {currentEntity}
           </div>
           <ResponsiveContainer width="100%" height="95%">
             <LineChart data={currentData}>
@@ -117,7 +116,7 @@ export function Sandbox() {
         <div className="flex flex-col grow bg-white text-black p-4 gap-2 rounded-xl shadow-xl overflow-auto">
           <div className="text-center text-2xl">
             {" "}
-            Base vs Counterfactual Revenue ($M): {currentEntity}
+            Base vs Simulated Revenue ($M): {currentEntity}
           </div>
           <ResponsiveContainer width="100%" height="95%">
             <LineChart data={currentData}>

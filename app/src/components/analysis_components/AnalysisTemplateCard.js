@@ -12,7 +12,7 @@ export function AnalysisTemplateCard({
     <div className="flex h-96 flex-col bg-white justify-center items-center gap-4 rounded-xl shadow-xl">
       <Link
         href={link}
-        className="flex w-8/10 text-4xl justify-center text-center text-black no-underline"
+        className="flex w-8/10 text-4xl justify-center text-center text-black no-underline rounded-xl hover:bg-[#eeeeee]"
       >
         {title}
       </Link>

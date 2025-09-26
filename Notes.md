@@ -46,17 +46,13 @@ Utah Assosiation of Special Districts: https://www.uasd.org/about-us
 
   - Instructions/ User tutorial?
 
-  - Convert homepage into story blocks
+  - Add story blocks onto homepage
 
   - structure edits
 
     - convert graph descriptions into tooltext (pop-up on hover)
     - entity profile covert to 4-up graphs (spotlight one on click? With the other three along the bottom?)
     - add individual liability graph into entity profile page
-
-  - Text edits
-
-    - Change 'Counterfactual' to 'Simulation'
 
   - Draft Deployment
 
